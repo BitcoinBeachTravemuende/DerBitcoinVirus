@@ -1,0 +1,21 @@
+# Summary
+
+[Cover](cover.md)
+
+[Für Ohana](./fuer_ohana.md)
+[Vorwort](./vorwort.md)
+[Über dieses Buch](./ueber_buch.md)
+[Über den Autor](./ueber_autor.md)
+[Prolog](./prolog.md)
+[Einleitung](./einleitung.md)
+- [Die Zeit](./1-zeit.md)
+  - [Was ist Zeit](./1.1-was.md)
+  - [Von Anbeginn der Zeit](./1.2-anbeginn.md)
+  - [Die Uhrzeit](./1.3-uhrzeit.md)
+  - [Die Blockzeit](./1.4-blockzeit.md)
+  - [Die Wahrnehmung unserer Zeit](./1.5-wahrnehmung.md)
+  - [Die Zukunft oder die gestohlene Zeit unserer Kinder](./1.6-zukunft.md)
+  - [Beispiel: Falsche Zeit](./1.7-falsche-zeit.md)
+- [Die physikalische Leistung](./2-phys-leistung.md)
+  - [Definition](./2-1-definition.md)
+  - [Proof of Work](./2-2-pow.md)
