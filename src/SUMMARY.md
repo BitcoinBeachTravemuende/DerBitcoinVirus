@@ -19,3 +19,8 @@
 - [Die physikalische Leistung](./2-phys-leistung.md)
   - [Definition](./2-1-definition.md)
   - [Proof of Work](./2-2-pow.md)
+- [Was ist Geld?](./3-geld.md)
+  - [Definition](./3-1-definition.md)
+  - [Warum nutzen wir Geld?](./3-2-warum.md)
+  - [Wozu all das viele Geld?](./3-3-wozu.md)
+  - [Vermögenswerte](./3-4-vermoegenswerte.md)

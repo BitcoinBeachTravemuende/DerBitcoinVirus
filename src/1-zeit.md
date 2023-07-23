@@ -1,4 +1,4 @@
-# 1 DIE ZEIT
+# 1. DIE ZEIT
 
 ## Die Zeit ist allgegenwärtig - t
 
