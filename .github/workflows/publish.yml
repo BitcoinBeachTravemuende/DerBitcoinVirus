@@ -1,27 +1,31 @@
-name: Publish Book
+name: GitHub Pages
 
 on:
   push:
     branches:
       - feat/migrate-book
+  pull_request:
 
 jobs:
-  build-and-publish:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup Rust
-        uses: actions-rs/toolchain@v1
+      - uses: actions/checkout@v3
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
         with:
-          toolchain: stable
-          override: true
-      - name: Install mdbook
-        run: cargo install mdbook
-      - name: Build book
-        run: mdbook build
-      - name: Publish book
+          mdbook-version: '0.4.8'
+          # mdbook-version: 'latest'
+
+      - run: mdbook build
+
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book
