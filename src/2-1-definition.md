@@ -1,4 +1,4 @@
-## 2.1 DEFINITION
+## 2.1. DEFINITION
 
 Die Leistung als physikalische Größe, bezeichnet die in einer Zeitspanne umgesetzte Energie bezogen auf die Zeitspanne.
 

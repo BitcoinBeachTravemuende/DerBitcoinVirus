@@ -1,4 +1,4 @@
-## 2.2 PROOF OF WORK
+## 2.2. PROOF OF WORK
 
 Ins Deutsche übersetzt: Arbeitsnachweis; eine Bescheinigung der
 aufgebrachten Leistung für einen gewissen Zeitraum.
