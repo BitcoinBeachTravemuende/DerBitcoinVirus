@@ -1,0 +1,27 @@
+name: Publish Book
+
+on:
+  push:
+    branches:
+      - feat/migrate-book
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+      - name: Install mdbook
+        run: cargo install mdbook
+      - name: Build book
+        run: mdbook build
+      - name: Publish book
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book
