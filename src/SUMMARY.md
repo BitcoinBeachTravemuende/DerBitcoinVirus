@@ -30,3 +30,8 @@
   - [Die EZB](./3-8-ezb.md)
   - [Interview mit Peter Preat](./3-9-interview.md)
   - [Inflationstabelle](./3-10-inflation.md)
+- [Die Matrix](./4-matrix.md)
+  - [Was ist die Matrix](./4-1-was.md)
+  - [Bretton-Woods-System](./4-2-bretton-woods-system.md)
+  - [Der Goldstandard](./4-3-goldstandard.md)
+  - [Der Cantillon-Effekt](./4-4-cantillon.md)
