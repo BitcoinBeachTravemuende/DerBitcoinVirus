@@ -19,7 +19,7 @@ Ich wollte wissen, ob es Zufall ist, dass ich arm bin oder ob ich wirklich selbs
 
 <center>
 
-![Alt text](assets/fabthefoxx.png)
+![Tweet von @FabTheFoxx](assets/fabthefoxx.png)
 
 [@FabTheFoxx](https://twitter.com/FabTheFoxx)
 
