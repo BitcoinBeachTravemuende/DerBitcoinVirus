@@ -35,3 +35,7 @@
   - [Bretton-Woods-System](./4-2-bretton-woods-system.md)
   - [Der Goldstandard](./4-3-goldstandard.md)
   - [Der Cantillon-Effekt](./4-4-cantillon.md)
+- [Das Bitcoin Virus](./5-virus.md)
+  - [Bitcoin](./5-1-bitcoin.md)
+  - [Die Insel](./5-2-insel.md)
+  - [Fazit](./5-3-fazit.md)
