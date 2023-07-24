@@ -1,6 +1,6 @@
 ## 2.1. DEFINITION
 
-Die Leistung als physikalische Größe, bezeichnet die in einer Zeitspanne umgesetzte Energie bezogen auf die Zeitspanne.
+Die Leistung als physikalische Größe bezeichnet die in einer Zeitspanne umgesetzte Energie bezogen auf die Zeitspanne.
 
 Ihr Formelzeichen ist meist **P** (englisch Power), ihre SI-Einheit das Watt mit dem Einheitszeichen **W**.
 
