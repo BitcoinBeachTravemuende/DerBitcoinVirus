@@ -36,7 +36,6 @@ Dieses Buch besteht aus 5 Teilen, die das Grundwissen vermitteln sollen, von:
 Jeder Teil ist Teil von etwas ganzem. Es erzählt die Geschichte von Blöcken und Ketten, von einer einsamen Insel, einem Diebstahl und einem Virus. Film und Musik sind Analogien zur
 unserer Realität. Sie sind der rote Faden in meinem Werk.
 
-Mit der Zeit fügen sich Teile zusammen, sie
-verarbeiten diese und fällen ihren Entschluss, richtig?
+Mit der Zeit fügen sich Teile zusammen, Sie verarbeiten diese und fällen ihren Entschluss, richtig?
 
 Aber was ist, wenn eben diese Teile manipuliert sind? Lassen Sie uns gemeinsam die Antwort finden.

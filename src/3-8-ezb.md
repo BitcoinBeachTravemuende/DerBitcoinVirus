@@ -1,4 +1,4 @@
-## 3.7. DIE EZB
+## 3.8. DIE EZB
 
 Gangster im Anzug.
 
@@ -54,20 +54,6 @@ Sie denkt nicht an morgen, weil sie genug mit dem heute zu kämpfen haben.
 Und bevor Sie Ihre Macht verlieren, kommt ein letztes großes Gefecht, ein letztes aufräumen des Feindes mit einer CDBC. Eine zu 100% nur rein digitaler, zentraler Euro unter der Kontrolle einiger weniger und ihrer Utopie vom grünen Sozialismus.
 
 Kein freies Geld bedeutet kein freies leben, kein freier Markt. Welcome to China.
-
-<center>
-
-## Währungsunion
-### =
-### Schuldenunion
-
-</center>
-
-> Die Währungsunion ist in der Außenwirtschaftstheorie und Wirtschaft ein Wechselkurssystem, bei dem sich Währungsräume (Staaten) zum Zwecke der Bildung einer gemeinsamen Währung (Gemeinschaftswährung) zusammenschließen. 
->
-> *Quelle: [@Wikipedia](https://de.wikipedia.org/wiki/W%C3%A4hrungsunion)*
-
-Kleiner Spoiler: Alle Währungsunionen, die der Mensch zuvor probiert hat, sind gescheitert, wirklich alle.
 
 Manche Länder zahlen mehr ein als andere. Das bedeutet aber nicht, das sie bei den Entscheidungen der EZB ein größeres
 Mitspracherecht haben. Je größer ein Land, dessen Population und Wirtschaft/BIP, desto höher auch sein Betrag an

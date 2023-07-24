@@ -1,10 +1,12 @@
-### 3.8. INTERVIEW MIT PETER PRAET
-
-Ein Ausschnitt:
+### 3.9. INTERVIEW MIT PETER PRAET
 
 *Quelle: [3Sat Dokumentation "Oeconomia"](https://www.3sat.de/film/dokumentarfilm/oeconomia-100.html)*
 
-"Mein Name ist Peter Praet, ich bin Direktorumsmitglied der Europäischen Zentralbank und Förster die Vorbereitung der Geldpolitik der Zentralbanken zuständig.
+Ein Ausschnitt:
+
+#### Peter Praet:
+
+"Mein Name ist Peter Praet, ich bin Direktorumsmitglied der Europäischen Zentralbank und für die Vorbereitung der Geldpolitik der Zentralbanken zuständig.
 
 Ich bin der Chefsvolkswirt der EZB, ich bereite alle geldpolitischen Entscheidungen vor, ich analysiere die Wirtschaft zusammen mit einem großen Team von Ökonomen und alle sechs Wochen unterbreite ich dem EZB-Rat Vorschläge.
 
@@ -128,7 +130,7 @@ Dazu fällt mir ein Zitat von einem sehr innovativen Mann ein:
 > Heut geh'n wir morgen erst ins Bett.<br>
 > Heut tanzt Mariett, heut tanzt Mariett.<br>
 > Zum Schlafen ist auch noch übermorgen Zeit.<br>
-> Heut tanz Mariett, heut tanz Mariett<br>
+> Heut tanzt Mariett, heut tanzt Mariett<br>
 > und heut heut.<br>
 > 
 > *Lied von Robert Koppel, 1928*
