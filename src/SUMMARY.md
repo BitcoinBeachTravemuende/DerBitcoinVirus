@@ -24,3 +24,8 @@
   - [Warum nutzen wir Geld?](./3-2-warum.md)
   - [Wozu all das viele Geld?](./3-3-wozu.md)
   - [Vermögenswerte](./3-4-vermoegenswerte.md)
+  - [Wer macht das Geld](./3-5-wer.md)
+  - [Der EURO](./3-6-eur.md)
+  - [Die EZB](./3-7-ezb.md)
+  - [Interview mit Peter Preat](./3-8-interview.md)
+  - [Inflationstabelle](./3-9-inflation.md)
