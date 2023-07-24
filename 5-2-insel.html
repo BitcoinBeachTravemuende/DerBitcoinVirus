@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Die Insel - Der Bitcoin Virus</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="cover.html">Cover</a></li><li class="chapter-item expanded affix "><a href="fuer_ohana.html">Für Ohana</a></li><li class="chapter-item expanded affix "><a href="vorwort.html">Vorwort</a></li><li class="chapter-item expanded affix "><a href="ueber_buch.html">Über dieses Buch</a></li><li class="chapter-item expanded affix "><a href="ueber_autor.html">Über den Autor</a></li><li class="chapter-item expanded affix "><a href="prolog.html">Prolog</a></li><li class="chapter-item expanded affix "><a href="einleitung.html">Einleitung</a></li><li class="chapter-item expanded "><a href="1-zeit.html"><strong aria-hidden="true">1.</strong> Die Zeit</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1-was.html"><strong aria-hidden="true">1.1.</strong> Was ist Zeit</a></li><li class="chapter-item expanded "><a href="1.2-anbeginn.html"><strong aria-hidden="true">1.2.</strong> Von Anbeginn der Zeit</a></li><li class="chapter-item expanded "><a href="1.3-uhrzeit.html"><strong aria-hidden="true">1.3.</strong> Die Uhrzeit</a></li><li class="chapter-item expanded "><a href="1.4-blockzeit.html"><strong aria-hidden="true">1.4.</strong> Die Blockzeit</a></li><li class="chapter-item expanded "><a href="1.5-wahrnehmung.html"><strong aria-hidden="true">1.5.</strong> Die Wahrnehmung unserer Zeit</a></li><li class="chapter-item expanded "><a href="1.6-zukunft.html"><strong aria-hidden="true">1.6.</strong> Die Zukunft oder die gestohlene Zeit unserer Kinder</a></li><li class="chapter-item expanded "><a href="1.7-falsche-zeit.html"><strong aria-hidden="true">1.7.</strong> Beispiel: Falsche Zeit</a></li></ol></li><li class="chapter-item expanded "><a href="2-phys-leistung.html"><strong aria-hidden="true">2.</strong> Die physikalische Leistung</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2-1-definition.html"><strong aria-hidden="true">2.1.</strong> Definition</a></li><li class="chapter-item expanded "><a href="2-2-pow.html"><strong aria-hidden="true">2.2.</strong> Proof of Work</a></li></ol></li><li class="chapter-item expanded "><a href="3-geld.html"><strong aria-hidden="true">3.</strong> Was ist Geld?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3-1-definition.html"><strong aria-hidden="true">3.1.</strong> Definition</a></li><li class="chapter-item expanded "><a href="3-2-warum.html"><strong aria-hidden="true">3.2.</strong> Warum nutzen wir Geld?</a></li><li class="chapter-item expanded "><a href="3-3-wozu.html"><strong aria-hidden="true">3.3.</strong> Wozu all das viele Geld?</a></li><li class="chapter-item expanded "><a href="3-4-vermoegenswerte.html"><strong aria-hidden="true">3.4.</strong> Vermögenswerte</a></li><li class="chapter-item expanded "><a href="3-5-wer.html"><strong aria-hidden="true">3.5.</strong> Wer macht das Geld</a></li><li class="chapter-item expanded "><a href="3-6-eur.html"><strong aria-hidden="true">3.6.</strong> Der EURO</a></li><li class="chapter-item expanded "><a href="3-7-waehrungs-schulden-union.html"><strong aria-hidden="true">3.7.</strong> Währungsunion/Schuldenunion</a></li><li class="chapter-item expanded "><a href="3-8-ezb.html"><strong aria-hidden="true">3.8.</strong> Die EZB</a></li><li class="chapter-item expanded "><a href="3-9-interview.html"><strong aria-hidden="true">3.9.</strong> Interview mit Peter Preat</a></li><li class="chapter-item expanded "><a href="3-10-inflation.html"><strong aria-hidden="true">3.10.</strong> Inflationstabelle</a></li></ol></li><li class="chapter-item expanded "><a href="4-matrix.html"><strong aria-hidden="true">4.</strong> Die Matrix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4-1-was.html"><strong aria-hidden="true">4.1.</strong> Was ist die Matrix</a></li><li class="chapter-item expanded "><a href="4-2-bretton-woods-system.html"><strong aria-hidden="true">4.2.</strong> Bretton-Woods-System</a></li><li class="chapter-item expanded "><a href="4-3-goldstandard.html"><strong aria-hidden="true">4.3.</strong> Der Goldstandard</a></li><li class="chapter-item expanded "><a href="4-4-cantillon.html"><strong aria-hidden="true">4.4.</strong> Der Cantillon-Effekt</a></li></ol></li><li class="chapter-item expanded "><a href="5-virus.html"><strong aria-hidden="true">5.</strong> Das Bitcoin Virus</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5-1-bitcoin.html"><strong aria-hidden="true">5.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="5-2-insel.html" class="active"><strong aria-hidden="true">5.2.</strong> Die Insel</a></li><li class="chapter-item expanded "><a href="5-3-fazit.html"><strong aria-hidden="true">5.3.</strong> Fazit</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Der Bitcoin Virus</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="52-die-insel"><a class="header" href="#52-die-insel">5.2 DIE INSEL</a></h2>
+<blockquote>
+<p>„Hörst du mir zu, Neo- oder siehst du der Frau im Rotem Kleid nach?“<br>
+<em>-Morpheus</em></p>
+<p>„Ich war…“<br>
+<em>-Neo</em></p>
+<p>„Sieh Sie dir an! Einfrieren!“<br>
+<em>-Morpheus</em></p>
+<p>„Wir sind gar nicht in der Matrix?“<br>
+<em>-Neo</em></p>
+<p>„Nein dies ist ein Trainingsprogramm, das dir eine Sache beibringen soll, wenn du keiner von uns bist, bist du einer von Ihnen!“<br>
+<em>-Morpheus</em></p>
+<p>@Matrix</p>
+</blockquote>
+<p>Sie stranden mit einer Gruppe von 5 Personen inklusive Ihnen selbst auf einer einsamen Insel. (Da ich Ihnen nicht die Geschlechteranzahl verrate zum Verhältnis des Ihren also kein Jackpot!) Ohne jede Spur von Menschen und weit ab der Zivilisation. Das, was Sie als Gruppe besitzen, soll fair aufgeteilt werden. Alles klar soweit?</p>
+<p>Nun das einzige, was sie als Gruppe zur Verfügung haben, sind 500€/$/¥ und ein Papierblock, sowie einen Stift, die Sie aus ihren Hosentaschen
+zusammengetragen haben. (Ja, sie sind, nicht nackt!)</p>
+<p>Sie haben also eine Gemeinschaft sowie die Ihnen durch die Natur/Zeit/physikalische Leistung gegebenen Ressourcen.</p>
+<p>Ich werde dieses Beispiel anhand von einer der essenziellsten der Bedürfnisse weiterführen: Der Nahrung.</p>
+<p>Der Mensch braucht Nahrung, um zu existieren. Er wandelt diese in physische Energie um, um daraus Lebenszeit zu generieren.</p>
+<p>Allerdings stellen Sie fest, dass Sie auf der Insel genau 1825 Kokosnüsse über einen Zeitraum von einem Jahr haben.</p>
+<p>Folgendes Dilemma eröffnet sich Ihnen jetzt: Die Steigerung der von der Palme/Insel produzierten Kokosnüsse (Nahrung), kann aufgrund der Beschaffenheit und der Größe der Insel nicht erhöht werden.</p>
+<p>Es passt nur eine gewisse Anzahl von Palmen auf eine Fläche. Dadurch können Sie nicht mehr Palmen züchten, um mehr Kokosnüsse zu ernten.</p>
+<p>Es gibt ein Maximum an physikalischer Leistung. Die Nahrung. Sie ist endlich und wird konsumiert von uns, um widerum Energie abzugeben. Der Kreislauf schließt sich, Energie geht nie verloren. Sie wird nur umgewandelt.</p>
+<p>Zurück zur Insel: Sie sind immer noch, wie zuvor erwähnt zu 5 auf der
+Insel. Aber Sie stellen nun folgendes fest: Sie können nicht alle Kokosnüsse gleich ernten und zu fairen Anteilen verteilen, da sie erst mit der Zeit reifen. Aber Sie kommen zu folgendem Ergebnis: Jeden Tag ist nur eine Nuss für jeweils eine Person reif.</p>
+<p>Sie beschließen als Gruppe dafür zu sorgen, dass die Nahrungsmittelsicherheit trotzdem gewährleistet bleibt mit folgender Rollenverteilung:</p>
+<ul>
+<li>Person 1 - holt die reife Nuss</li>
+<li>Person 2 - verteilt die Nüsse</li>
+<li>Person 3 - pflegt die Palmen</li>
+<li>Person 4 - wird die Bank</li>
+<li>Person 5 - sucht weitere Ressourcen auf der Insel</li>
+</ul>
+<p>Zur Erinnerung: Die Geldmenge ist unser bekanntes Medium €/$/¥ 500,-</p>
+<p>Nun rein rechnerisch wären bei einer fairen Geldverteilung folglich 100,- von unserem Medium zu erwarten. (500/5=100)</p>
+<p>Es wird jeder für seine Arbeit bezahlt, die ihm obliegt, um sich damit dann am Tag die benötigte Nahrung zu erwerben. So wird ein faires gleichberechtigtes System für alle geschaffen, in der Leistung honoriert und gefördert wird. Die Leistungsgesellschaft hat bei Ihnen Einzug
+gehalten.</p>
+<p>Nun was ist, wenn jemand jetzt keine Lust hat zu arbeiten? Was ist wenn jemand anderes dessen Aufgaben zum Teil oder gar ganz übernimmt? Ganz einfach. Er wird dafür bezahlt. Sein Vermögen am Tauschmedium wächst, da er weder seine Ausgaben noch sein Kaufverhalten geändert hat.</p>
+<p>Er spart, oder um es in Bitcoiner Sprache zu sagen
+er HODL´t.</p>
+<p>HODL: Tippfehler der aus HOLD (halten) entstand und dauerhaft halten bedeutet. Erster war „GameKyyubi“ 18.12 13</p>
+<p>Der Arbeitsverweigerer, Kranke, Urlauber hingegen reduziert seine Ersparnisse und wird diese in einer solchen Lage des Arbeitsentzuges keine Leistungen beziehen können, da er keine liefert.</p>
+<p>Er wird in diesem Fall verhungern, wenn er kein Medium zum Tauschen hat, auf welches sich zuvor geeinigt worden war. Er wird verhungern, wenn keine Almosen bekommt oder stiehlt.</p>
+<blockquote>
+<p>Wer hat die Kokosnuss geklaut?</p>
+<p>Die Affen rasen durch den Wald.<br>
+Der eine macht den anderen kalt.<br>
+Die ganze A enbande brüllt.<br>
+Wo ist die Kokosnuss?<br>
+Wo ist die Kokosnuss?<br>
+Wer hat die Kokosnuss geklaut?<br>
+Wo ist die Kokosnuss?<br>
+Wo ist die Kokosnuss?<br>
+Wer hat die Kokosnuss geklaut?<br></p>
+<p><em>Kinderlied: Wer hat die Kokosnuss geklaut<br>
+Urheber unklar, aus dem den 1950er.</em></p>
+</blockquote>
+<p>In unserem Fall verstirbt die Person Nr. 2. Sie sind ab jetzt zu viert auf der Insel.</p>
+<p>Was hat sich nun für Sie entscheidendes verändert? Die Geldmenge an sich hat sich nicht geändert. Die Bank bestätigt, dass alles an Medium 500 €/$/¥ noch existiert.</p>
+<p>Soweit so gut. Die Ihnen zu Verfügung stehenden Ressourcen aber. Sie bekommen jetzt den Anteil der verstorbenen Person, 1 Kokosnuss, geviertelt und in der bestehenden Gruppe aufgeteilt. Sofern jeder diese erwerben will. Klingt doch soweit ganz gut oder?</p>
+<p>Allerdings müssen Sie nun als Gruppe für die
+Person, die Ihnen nun dauerhaft fehlt, Ersatz an
+physikalischer Leistung leisten. </p>
+<p>Diese Arbeit teilen Sie wiederum fair auf. Für die nun mehr erbrachte Leistung bekommen Sie mehr Medium, mehr Ressourcen.</p>
+<p>Nun ist die Summe der Nahrungsmittel gleich geblieben. Die wurden aber teurer und zeitintensiver in Ihrer Produktion, da mehr Arbeit von weniger Personen mit mehr Zeitaufwand des Einzelnen aufgebracht werden muss.</p>
+<p>Eine Preissteigerung auf der gesamten Linie nennt man Inflation. Die Menge der Ressourcen im Vergleich zur Population haben sich deflationär verhalten, sie wurde mehr pro Person.</p>
+<p>Erhöht oder verringert sich die Population, können
+Sie mit der selben Geldmenge arbeiten.</p>
+<p>Solange die Geldmenge begrenzt ist, passt sich Ihr intrinsischer Wert an die Menge der Nutzer an. Sie benötigen nicht mehr!</p>
+<p>Der Markt, die Bedürfnisse der Menschen wird den Preis finden und alles reguliert sich von ganz alleine, ohne dass ein Eingreifen von Banken/ Regierungen notwendig wäre.</p>
+<p>Preise werden gesenkt. Nur notwendige Dinge werden gekauft. Kommen Dinge hinzu, die als notwendig erachtet werden wie zum Beispiel Wasser.</p>
+<p>Jeder wird konsumieren, da Wasser einen Nutzen für uns hat. Folglich geben Sie nun auch Geld für Wasser aus. Jeder wird Wasser bekommen, er wird dafür arbeiten, Rrspartes opfern oder andere Wege suchen, sich Medium zu verdienen, in einem gedeckten Geldsystem.</p>
+<p>Was ist aber, wenn Person Nr.4 die Bank - nennen wir
+Sie Jerome oder Christin (dass überlasse ich Ihnen) - auf die Idee kommt, die Geldmenge auszuweiten? Ansonsten würde sie jemand ersetzen und der Verlust der Position innerhalb der Gesellschaft wäre unausweichlich.</p>
+<p>Aber „MMT“ sei dank und der Papierblock und der Stift
+sind die Rettung für Person Nr.4. Sie malt jetzt einfach ein neues Medium und spricht ihr im Gegenzug Vertrauen aus. Mehr allergins nicht. <strong>Keiner hält Sie auf. Leider. Fiat wurde geboren.</strong></p>
+<p>Es fällt der Wert an ihrem Medium. Und sie wollen
+nun auch mehr Medium, weil ihres nicht mehr ausreicht und diese sich gegenüber den Ressourcen inflationär verhält.</p>
+<p>Die Lohn-und Preisspirale ist losgetreten und wird immer schlimmer. Die Spirale kann scheinbar ewig so weitergehen. Bis zu einem gewissen Punkt, der sogenannten Hyperinflation.</p>
+<p>Person Nr.4 ist völlig eskaliert und Ihr Geld ist eben nur Papier und es folgen Konsequenzen auf ihre massiven Geldausweitung.</p>
+<p>Leider weigert sich Person Nr.1, die zuständig ist, die
+Frucht von der Palme runterzuholen, die Palme hochzuklettern. Jemand anderes kann das derzeit nicht.</p>
+<p>Sie haben die Wahl. Sollen alle verhungern? Sie setzten dem Irrsinn ein Ende. Person Nr.4 und dem von Ihr geschaffenen Medium wird das Vertrauen entzogen. Sie hat vergessen, dass unsere Ressourcen begrenzt sind.</p>
+<p>Es gibt eine Währungsreform und alle verlieren. Denn das gesparte Medium wurde durch Schulden und Ausweitung der Geldmenge entwertet.</p>
+<p>Nun muss ein neues Geld her. Mit Bitcoin wäre dies nicht passiert, in Papierform. Es ist hartes, gutes Geld, Sound Money. </p>
+<p>Geld ist weder gut noch schlecht. Es ist genau wie Bitcoin. Es ist neutral, es kann die Wurzel aller Probleme sein oder eben die Lösung.</p>
+<p>In der Geschichte des Geldes und der der Menschheit kam es immer wieder zum Eingriff ins Finanzsystems. Zum Wohle einiger weniger, welche
+das Ende dessen eingeläutet hat, wobei wir es doch eigentlich besser wissen sollten.</p>
+<p>Lernen Sie anhand diesen Beispiels zu sehen, in welchem Zeitpunkt Sie sich befinden, welcher Zyklus gerade der vorherrschende ist und durch
+welchen er ersetzt wird.</p>
+<p>Die Geschichte wiederholt sich nicht, aber Sie reimt sich und jede Zeit bringt eine andere Art von Persönlichkeiten mit sich, welche unsere Zukunft formen.</p>
+<p>Alles ist begrenzt, außer unsere Vorstellungskraft, die Zeit und das Geld was wir derzeit nutzen.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="5-1-bitcoin.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="5-3-fazit.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="5-1-bitcoin.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="5-3-fazit.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Fazit - Der Bitcoin Virus</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="cover.html">Cover</a></li><li class="chapter-item expanded affix "><a href="fuer_ohana.html">Für Ohana</a></li><li class="chapter-item expanded affix "><a href="vorwort.html">Vorwort</a></li><li class="chapter-item expanded affix "><a href="ueber_buch.html">Über dieses Buch</a></li><li class="chapter-item expanded affix "><a href="ueber_autor.html">Über den Autor</a></li><li class="chapter-item expanded affix "><a href="prolog.html">Prolog</a></li><li class="chapter-item expanded affix "><a href="einleitung.html">Einleitung</a></li><li class="chapter-item expanded "><a href="1-zeit.html"><strong aria-hidden="true">1.</strong> Die Zeit</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1-was.html"><strong aria-hidden="true">1.1.</strong> Was ist Zeit</a></li><li class="chapter-item expanded "><a href="1.2-anbeginn.html"><strong aria-hidden="true">1.2.</strong> Von Anbeginn der Zeit</a></li><li class="chapter-item expanded "><a href="1.3-uhrzeit.html"><strong aria-hidden="true">1.3.</strong> Die Uhrzeit</a></li><li class="chapter-item expanded "><a href="1.4-blockzeit.html"><strong aria-hidden="true">1.4.</strong> Die Blockzeit</a></li><li class="chapter-item expanded "><a href="1.5-wahrnehmung.html"><strong aria-hidden="true">1.5.</strong> Die Wahrnehmung unserer Zeit</a></li><li class="chapter-item expanded "><a href="1.6-zukunft.html"><strong aria-hidden="true">1.6.</strong> Die Zukunft oder die gestohlene Zeit unserer Kinder</a></li><li class="chapter-item expanded "><a href="1.7-falsche-zeit.html"><strong aria-hidden="true">1.7.</strong> Beispiel: Falsche Zeit</a></li></ol></li><li class="chapter-item expanded "><a href="2-phys-leistung.html"><strong aria-hidden="true">2.</strong> Die physikalische Leistung</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2-1-definition.html"><strong aria-hidden="true">2.1.</strong> Definition</a></li><li class="chapter-item expanded "><a href="2-2-pow.html"><strong aria-hidden="true">2.2.</strong> Proof of Work</a></li></ol></li><li class="chapter-item expanded "><a href="3-geld.html"><strong aria-hidden="true">3.</strong> Was ist Geld?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3-1-definition.html"><strong aria-hidden="true">3.1.</strong> Definition</a></li><li class="chapter-item expanded "><a href="3-2-warum.html"><strong aria-hidden="true">3.2.</strong> Warum nutzen wir Geld?</a></li><li class="chapter-item expanded "><a href="3-3-wozu.html"><strong aria-hidden="true">3.3.</strong> Wozu all das viele Geld?</a></li><li class="chapter-item expanded "><a href="3-4-vermoegenswerte.html"><strong aria-hidden="true">3.4.</strong> Vermögenswerte</a></li><li class="chapter-item expanded "><a href="3-5-wer.html"><strong aria-hidden="true">3.5.</strong> Wer macht das Geld</a></li><li class="chapter-item expanded "><a href="3-6-eur.html"><strong aria-hidden="true">3.6.</strong> Der EURO</a></li><li class="chapter-item expanded "><a href="3-7-waehrungs-schulden-union.html"><strong aria-hidden="true">3.7.</strong> Währungsunion/Schuldenunion</a></li><li class="chapter-item expanded "><a href="3-8-ezb.html"><strong aria-hidden="true">3.8.</strong> Die EZB</a></li><li class="chapter-item expanded "><a href="3-9-interview.html"><strong aria-hidden="true">3.9.</strong> Interview mit Peter Preat</a></li><li class="chapter-item expanded "><a href="3-10-inflation.html"><strong aria-hidden="true">3.10.</strong> Inflationstabelle</a></li></ol></li><li class="chapter-item expanded "><a href="4-matrix.html"><strong aria-hidden="true">4.</strong> Die Matrix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4-1-was.html"><strong aria-hidden="true">4.1.</strong> Was ist die Matrix</a></li><li class="chapter-item expanded "><a href="4-2-bretton-woods-system.html"><strong aria-hidden="true">4.2.</strong> Bretton-Woods-System</a></li><li class="chapter-item expanded "><a href="4-3-goldstandard.html"><strong aria-hidden="true">4.3.</strong> Der Goldstandard</a></li><li class="chapter-item expanded "><a href="4-4-cantillon.html"><strong aria-hidden="true">4.4.</strong> Der Cantillon-Effekt</a></li></ol></li><li class="chapter-item expanded "><a href="5-virus.html"><strong aria-hidden="true">5.</strong> Das Bitcoin Virus</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5-1-bitcoin.html"><strong aria-hidden="true">5.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="5-2-insel.html"><strong aria-hidden="true">5.2.</strong> Die Insel</a></li><li class="chapter-item expanded "><a href="5-3-fazit.html" class="active"><strong aria-hidden="true">5.3.</strong> Fazit</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Der Bitcoin Virus</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="53-fazit"><a class="header" href="#53-fazit">5.3. Fazit</a></h2>
+<blockquote>
+<p>Denn ich bin ganz nah dran.<br>
+Bin ganz nah dran.<br>
+Alle denken nur noch ich bin Irre.<br>
+Ist mir egal..<br></p>
+<p>Oft war ich verzweifelt, doch das ist vergangen.<br>
+Nichts und niemand hält mich jetzt noch auf.<br>
+Denn ich bin ganz nah dran.<br></p>
+<p>Ich weiß noch mein Vater sagte<br>
+„manchmal werden Märchen wahr“.<br>
+Es liegt in deiner Hand.<br>
+Nur du machst es klar.<br></p>
+<p><em>Auszug: Songtext, Ganz nah dran</em><br>
+<em>Songwriter: Randy Newman/ Heike Kospach</em><br>
+<em>@ Küss den Frosch Walt Disney Music Company</em></p>
+</blockquote>
+<p>Die Regeln von Bitcoin sind klar definiert und unveränderbar.</p>
+<p>Es gibt 21.000.000 Millionen „Bitcoins“. Bitcoin sind Buchstaben und Zahlen in einer Kette von Blöcken, eine Konstante zur Zeit.</p>
+<p>Die Politik, der Staat und Ihr Finanzsystem eher ein Wechselspiel der Gefühle.</p>
+<p>Bitcoin gibt Ihnen die Eigenverantwortung zurück, Sie selbst sind die Bank.</p>
+<p>Sie verkonsumieren nur das, was Sie wirklich benötigen, entziehen sich der modernen Wegwerfgesellschaft von heute.</p>
+<p>Fiat Währungen schaffen immer nur neue unnötige Vermögenswerte, die uns blenden sollen.</p>
+<p>In einer Welt von Sondervermögen, Übergewinne oder Zufallsgewinne durch Fiat Geld kann man niemanden mehr vertrauen, niemand ist sich seiner
+Zeit und Geldes sicher.</p>
+<p>Sie müssen die Dinge nicht zwingend verstehen, um diese nutzen oder davon profitieren zu können.</p>
+<p>Bitcoin ist nur Versuch. Wir wissen nicht, wem die Allgemeinheit das
+Vertrauen ausspricht. Wir wissen nicht, ob morgen ein elektromagnetischer Impuls durch die Sonne stattfindet und wir alle wieder im Mittelalter leben, was für niemanden von uns, wirklich erfreulich wäre.</p>
+<p><em>Bitcoin fixes this</em> bedeutet ein gedecktes, globales, dezentrales, limitiertes Geld ohne dritte Instanz. Es bedeutet, dass egal wie schlimm es doch sein mag, worin die Lösung besteht, Bitcoin.</p>
+<p>Es ist Bitcoin egal, wo du bist, welche ethnische Herkunft, welches Aussehen, welche Meinungen, Vorlieben oder Eigenschaften du auch immer hast.</p>
+<p>Es ist da, um zu dienen. Es ist da, um das Vertrauen ins Geld zurück zu geben.</p>
+<p>Bitcoin ist so viel mehr, als wir jemals hatten. Es ist die Hoffnung auf eine bessere Zukunft für unsere Kinder, in der Ressourcen nicht verschenkt oder verschwendet werden.</p>
+<p>Es ist eine alternative zum jetzigen bestehenden System.</p>
+<p>Angriffe auf das Netzwerk sind so gut wie unmöglich. Es regeneriert sich wie ein Axolotl, verbreitet sich unaufhaltsam wie ein Virus in den
+Köpfen der Menschen, wächst heran zu einem physischen und psychischen Netzwerk mit dem Potential zur Heilung der Welt in der wir, auf der wir
+leben dürfen.</p>
+<p>Wir genesen an Bitcoin, wir wachsen mit Bitcoin.</p>
+<p>Ich bin gewachsen an Bitcoin, meine Familie, meine Freunde und mein Kind wird es.</p>
+<p>Ich glaube wieder an den Menschen, ich glaube an das gute in ihm, an seine Vernunft und die Fähigkeit an Krisen zu wachsen. Egal ob er diese nun zuvor selbstverursacht hat oder nicht. Die Verneigung kann eine Art von Unterdrückung sein  oder auch die des Respekts.</p>
+<p>Ich verneige mich voller Demut, Dankbarkeit und Respekt vor Satoshi Nakamoto, vor Bitcoin, dem Netzwerk.</p>
+<p>Als ich nach Jahren der Gefangenschaft endlich frei
+war, es begriff und wirklich realisierte, brachte Bitcoin mich
+zum Weinen. Es berührte meine Seele.</p>
+<p>Das wer einer der intensivsten Reisen, die Ich jemals gemacht haben darf, einer der wohl wirklich prägenden Moment im Leben.</p>
+<p>Bitcoin macht Sie reich, das ist richtig, aber ganz anders wie es sich dich meisten Vorstellen. Spoiler es hat nichts mit Geld zu tun.</p>
+<center>
+<p><img src="assets/alien.jpg" alt="Alien" /></p>
+</center>
+<center>
+<p><img src="assets/parody.jpg" alt="Parody" /></p>
+</center>
+<blockquote>
+<p>„Solange die Matrix existiert, wird der Mensch niemals frei sein“.</p>
+<p><em>Morpheus @Matrix</em></p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="5-2-insel.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="5-2-insel.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
