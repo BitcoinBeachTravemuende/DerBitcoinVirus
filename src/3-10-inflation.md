@@ -1,4 +1,4 @@
-### 3.9. INFLATIOINSTABELLE
+### 3.10. INFLATIOINSTABELLE
 
 Die nun folgende Tabelle zeigt Ihnen an, wie lange es dauert, bis sich Ihre Kaufkraft, also was Sie sich für den selben 50 € Schein an Waren und Dienstleistungen leisten können, halbiert.
 
