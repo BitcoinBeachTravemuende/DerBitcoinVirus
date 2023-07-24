@@ -1,4 +1,4 @@
-## 4.3. DER CANTILLON-EFFEKT
+## 4.4. DER CANTILLON-EFFEKT
 
 Als Cantillon-Effekt wird in der Ökonomie der Effekt bezeichnet, dass sich eine Erhöhung der (Giral-) Geldmenge (Nettokreditvergabe) nicht automatisch gleichmäßig auf alle Bereiche einer Volkswirtschaft verteilt, sondern in Stufen, wobei manche Bereiche (insbesondere der Bankensektor, andere staatliche Firmen, der Unternehmersektor und politisch begünstigte Gruppen) zuerst profitieren, während der Rest der Volkswirtschaft später folgt oder gar nicht von der Geldschöpfung profitiert.
 
