@@ -37,6 +37,6 @@ Sie bestehlen die Armen, Schwachen, die junge und ältere Generation und schauen
 
 
 
-> „Die Antwort ist irgendwo da draußen Neo, sie ist auf der Suche nach dir und sie wird dich nden, wenn du es willst“
+> „Die Antwort ist irgendwo da draußen Neo, sie ist auf der Suche nach dir und sie wird dich finden, wenn du es willst“
 > 
 > *Trinity @Matrix*
