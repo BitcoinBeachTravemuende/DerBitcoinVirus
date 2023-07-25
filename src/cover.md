@@ -1,13 +1,9 @@
 
-### Vorderseite
-
 <center>
 
 ![Buch Vorderseite](assets/cover-front.png)
 
 </center>
-
-### Rückseite
 
 <center>
 
