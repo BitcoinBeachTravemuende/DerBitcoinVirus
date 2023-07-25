@@ -44,6 +44,10 @@ mdbook serve
 
 Damit wird ein lokaler Webserver gestartet, der das Buch ausliefert. Das Buch kann im Browser unter `localhost:3000` betrachtet werden. Während der Webserver läuft, wird das Buch automatisch neu gerendert, sobald sich die Dateien des Buches ändern.
 
+## Online veröffentlichen
+
+Sobald ein Pull Request in den `main` Branch gemerged wird, wird das Buch per [GitHub Action](.github/workflows/publish.yml) automatisch neu erstellt und wird ca. 2-3 Minuten später auf https://bitcoinbeachtravemuende.github.io/DerBitcoinVirus/ veröffentlicht.
+
 ## Verbesserungen
 
 Vorschläge für Verbesserungen oder Korrekturen sind immer willkommen. Erstelle dazu ein Issue oder einen Pull Request.
