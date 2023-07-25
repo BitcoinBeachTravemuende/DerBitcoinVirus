@@ -39,3 +39,8 @@
   - [Bitcoin](./5-1-bitcoin.md)
   - [Die Insel](./5-2-insel.md)
   - [Fazit](./5-3-fazit.md)
+- [Tips und Warnungen](./6-tips.md)
+  - [Wallet](./6-1-wallet.md)
+  - [Warnung](./6-2-warnung.md)
+  - [Danksagung](./6-3-dank.md)
+  - [Spende](./6-4-spende.md)
