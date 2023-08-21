@@ -9,16 +9,16 @@
 Zur aktuellen Blockzeit 752.313 während meiner Recherche ergab sich mir folgendes Ergebnis,
 welche die Geldmenge in drei Kategorien unterteilt.
 
-### Die Geldmenge M1 : 11,3 MILLIARDEN €
+### Die Geldmenge M1 : 11,3 Milliarden €
 Umfasst überwiegend das Bargeld und Sichteinlagen (bei der Bank liegende Geldbeträge, die täglich ausgezahlt werden können}.
 
-### Die Geldmenge M2: 14,7 MILLIARDEN €
+### Die Geldmenge M2: 14,7 Milliarden €
 Sie umfasst überwiegend Spareinlagen, wie z,B den Bausparvertrag.
 
-### Die Geldmenge M3: 15,5 MILLIARDEN €
+### Die Geldmenge M3: 15,5 Milliarden €
 Sie umfasst Kredite sowie Umsätze aus den Wertpapiergeschäften.
 
-Soweit die Daten von Statista stimmen, so ergab sich Ende Dezember 2021 eine Summe von 41,5 MILLIARDEN Euro.
+Soweit die Daten von Statista stimmen, so ergab sich Ende Dezember 2021 eine Summe von 41,5 Milliarden Euro.
 
 <center>
 
