@@ -27,7 +27,7 @@ Soweit die Daten von Statista stimmen, so ergab sich Ende Dezember 2021 eine Sum
 </center>
 
 Diese Summe ist seitdem weiterhin expansiv gestiegen und sie wird es auch weiterhin. Es werden weiter Schulden aufgenommen, der
-Wachstum darf niemals aufhören, koste es was es wolle. Die Menge an Bargeld M0 etwa 1,4 Billionen 11xxxxxxx1 kommt da noch hinzu.
+Wachstum darf niemals aufhören, koste es was es wolle. Die Menge an Bargeld M0 etwa 1,4 Milliarden kommt da noch hinzu.
 
 Wenn Sie mehr konsumieren als Sie erwirtschaften, machen Sie Schulden, welche sich mit der Zeit anhäufen. 
 
