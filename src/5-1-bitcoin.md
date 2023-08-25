@@ -45,6 +45,8 @@ Zahlungen, werden kryptographisch legitimiert (digitale Signatur) und über ein 
 
 ![Miner](assets/miner.jpg)
 
+[@Cointelegraph](https://google/amp/cointelegraph.com/news/gas-heater-broke-down-i-ll-just-heat-my-caravan-with-a-bitcoin-miner/amp)
+
 </center>
 
 
