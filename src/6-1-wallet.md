@@ -17,7 +17,7 @@ Ich rate Ihnen immer zu einer Hardware Wallet und einem Backup aus Stahl, aus Gr
 Wer schleppt denn schon gerne all seine Ersparnisse mit sich herum? Wenn Sie mit dem Gedanken spielen, Bitcoin zu erwerben, müssen sich auch bewusst sein, dass damit die Verantwortung eingehen wird, diese selbständig zu verwalten. Sei es für sich selbst oder für jemanden anderen. Denken Sie auch daran, wie Sie Ihre Bitcoin sicher vererben können, ohne einer 3. Instanz oder ohne Steuer, die Raub Ihrer Zeit und
 physikalischer Leistung ist.
 
-Als Hardware Wallet empfiehlt sich meiner persönlichen Meinung nach die BitBox02 Bitcoin only Edition von [Shift Crypto](https://bitbox.swiss/).
+Als Hardware Wallet empfiehlt sich meiner persönlichen Meinung nach die BitBox02 Bitcoin only Edition von [Shift Crypto](https://shiftcrypto.ch/bitbox02/?ref=DCCsU5qDDC).
 
 Mit dieser stellen Sie Ihren individuellen Schlüssel her, die Wörter sind der Schlüssel. Diese müssen Sie beschützen. Wer diese hat, hat den uneingeschränkten Zugri auf dem ihn zugeschrieben Bestand an UTXO‘s.
 
