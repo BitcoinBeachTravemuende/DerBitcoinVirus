@@ -41,7 +41,9 @@ Kaninchen auf dich wartet.
 
 Danke für deine Zeit. Stelle Fragen, bleibe immer skeptisch, lerne dazu, höre niemals auf zu träumen, wach nur wieder auf.
 
-Und wenn Ihr Lust habt mal zu sprechen, seit ihr alle jederzeit am Bitcoin Beach Travemünde willkommen 
+Und wenn Ihr Lust habt mal zu sprechen, seit ihr alle jederzeit am Bitcoin Beach Travemünde willkommen.
+
+[@Telegram](https://t.me/+WHuKyfJsY2I5YWM6) 
 
 #### Kahnsis de Villain
 
