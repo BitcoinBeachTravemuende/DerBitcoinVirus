@@ -2,6 +2,8 @@
 
 Ganz besonders möchte ich mich bei meiner wundervollen Ehefrau bedanken, die während des Schreibens eine enorme Hilfe war und mitgeholfen hat. Ich danke Dir für so viele, wunderbare Jahre. Auch für die, die noch vor uns liegen und unser Proof of work Kind. Ich weiß, dass ich fast nur über Bitcoin rede und Du erträgst es tapfer. Ich liebe Dich / Euch.
 
+Ich danke meinem Satoshi,ich weiß du wirst das lesen ich möchte dir sagen das ich ohne dich nie soweit gekommen wäre,ich bin froh dich einen Freund und Mentor  nennen zu können.Lebe lang und erfüllt. 
+
 Dank an Gigi für „die Kette von Blöcken“, Dein Buch „21 Lektionen“ und Deiner wertvollen Zeit, die Du mir Geschenk hast.
 
 Vielen Dank Dominik Kettner, der mir das Wissen von Edelmetallen vermittelt hat.
@@ -35,9 +37,11 @@ Vielen dank „Bitcoin Twitter“ Community. Ihr seid echt verrückt. Denkt mal 
 Ich danke allen Bitcoinern.
 
 Zum Schluss möchte ich noch jedem danken, der sich nicht verschließt und sich dazu entscheidet, mal zu träumen von einer Wiese, wo das weiße
-Kaninchen auf Dich wartet.
+Kaninchen auf dich wartet.
 
 Danke für Deine Zeit. Stelle Fragen, bleibe immer skeptisch, lerne dazu, höre niemals auf zu träumen, wach nur wieder auf.
+
+Und wenn Ihr Lust habt mal zu sprechen, seit ihr alle jederzeit am Bitcoin Beach Travemünde willkommen 
 
 #### Kahnsis de Villain
 
