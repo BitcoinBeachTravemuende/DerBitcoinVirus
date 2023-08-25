@@ -27,7 +27,7 @@ Hacker haben, solange der Schlüssel nicht ausgeplaudert oder verbreitet wird, k
 
 Mt.Gox, Celsius, FTX, Nuri und Co. können Ihnen egal sein. Sie schlafen dennoch gut. Was fehlt ist der Schutz vor anderen Katastrophen, wie z.B Feuer. Was ist wenn das Haus samt BitBox02 komplett in Flammen steht? Das Backup, der Wörter auf Papier sind dann eine Spende an das ganze Netzwerk. Danke..., oder?
 
-Ich mache hier nochmal unbezahlte Werbung, was ich nochmals betonen möchte und empfehle ein Stahl Backup von [seedor.io](https://www.seedor.io/) Made in Germany, welches meiner persönlichen Meinung nach sein Geld wert und ideal für Einsteiger geeignet ist. Ich habe schon Erfahrungen mit einem Hausbrand machen dürfen. Glauben Sie mir, damit ist es entspannter und Sie auf der sicheren Seite. Ihre Wörter gestanzt in Stahl.
+Ich mache hier nochmal unbezahlte Werbung, was ich nochmals betonen möchte und empfehle ein Stahl Backup von [seedor.io](https://www.seedor.io/discount/KAHNSIS?redirect=%2Fcollections%2Fprodukte) Made in Germany, welches meiner persönlichen Meinung nach sein Geld wert und ideal für Einsteiger geeignet ist. Ich habe schon Erfahrungen mit einem Hausbrand machen dürfen. Glauben Sie mir, damit ist es entspannter und Sie auf der sicheren Seite. Ihre Wörter gestanzt in Stahl.
 
 <center>
 
