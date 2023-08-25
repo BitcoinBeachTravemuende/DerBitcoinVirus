@@ -39,7 +39,7 @@ Ich danke allen Bitcoinern.
 Zum Schluss möchte ich noch jedem danken, der sich nicht verschließt und sich dazu entscheidet, mal zu träumen von einer Wiese, wo das weiße
 Kaninchen auf dich wartet.
 
-Danke für Deine Zeit. Stelle Fragen, bleibe immer skeptisch, lerne dazu, höre niemals auf zu träumen, wach nur wieder auf.
+Danke für deine Zeit. Stelle Fragen, bleibe immer skeptisch, lerne dazu, höre niemals auf zu träumen, wach nur wieder auf.
 
 Und wenn Ihr Lust habt mal zu sprechen, seit ihr alle jederzeit am Bitcoin Beach Travemünde willkommen 
 
