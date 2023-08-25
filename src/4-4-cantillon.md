@@ -13,7 +13,7 @@ Benannt wurde der Effekt nach Richard Cantillon, der 1755 erstmals diesen Effekt
 
 ![Kinderspiel](assets/stein-auf-stein.jpg)
 
-[Wikipedia](https://commons.wikimedia.org/wiki/File:Hyperinflation_in_Germany_in_1923.jpg)
+[Wikipedia Hyperinflation 1923](https://commons.wikimedia.org/wiki/File:Hyperinflation_in_Germany_in_1923.jpg )
 
 </center>
 
