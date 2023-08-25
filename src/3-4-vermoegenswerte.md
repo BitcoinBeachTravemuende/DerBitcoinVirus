@@ -34,6 +34,6 @@ Karte offen neben den Automaten liegen, kann sich jeder von Ihrem Konto bedienen
 ![Anlageklassen nach Marktkapitalisierung](assets/anlageklassen.png)<br>
 *Anlageklassen nach Marktkapitalisierung in US-Dollar (2021)<br>
 Quellen: Morningstar, Finanzen.net, savlillis.com, CoinMarketcap <br>
-Via [blockchainwelt.de](https://blockchainwelt.de/)*
+Via [blockchainwelt.de](https://blockchainwelt.de/krypto-statistiken/)*
 
 </center>
