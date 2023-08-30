@@ -1,6 +1,6 @@
 ## 6.2. DANKSAGUNG
 
-Ganz besonders möchte ich mich bei meiner wundervollen Ehefrau bedanken, die während des Schreibens eine enorme Hilfe war und mitgeholfen hat. Ich danke Dir für so viele, wunderbare Jahre. Auch für die, die noch vor uns liegen und unser Proof of work Kind. Ich weiß, dass ich fast nur über Bitcoin rede und Du erträgst es tapfer. Ich liebe Dich / Euch.
+Ganz besonders möchte ich mich bei meiner wundervollen Ehefrau bedanken, die während des Schreibens eine enorme Hilfe war und mitgeholfen hat. Ich danke Dir für so viele, wunderbare Jahre. Auch für die, die noch vor uns liegen und unser Proof of work Kind. Ich weiß, dass ich fast nur über Bitcoin rede und Du erträgst es tapfer. Ich liebe euch.
 
 Ich danke meinem persönlichen Satoshi, ich weiß du wirst das lesen, ich möchte dir sagen das ich ohne dich nie soweit gekommen wäre,ich bin froh dich einen Freund und Mentor nennen zu können.Lebe lang, gesund und erfüllt.
 
