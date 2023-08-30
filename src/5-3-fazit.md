@@ -80,7 +80,7 @@ Bitcoin macht Sie reich, das ist richtig, aber ganz anders wie es sich dich meis
 
 ![Parody](assets/parody.jpg)
 
-[Youtube](https://youtu.be/mwSzIEXVuA)
+[Youtube](https://youtu.be/mwSzlEXVuA)
 
 </center>
 
