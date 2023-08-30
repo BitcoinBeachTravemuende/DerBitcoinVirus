@@ -22,7 +22,7 @@ Ich bedanke mich bei Niko Jilch, der sich die Zeit genommen hat, die Rohfassung 
 Vielen Dank geht an den Helper, der mich bestätigt hat das Werk zu veröffentlichen. Ich danke auch Dir für das Lesen des Manuskripts,
 Deiner Hilfe, bei jeden meiner Fragen, auch die richtige Antwort zu finden.
 
-Danke El Bitcoin Ambassador für so ziemlich alles, was sich erst durch Dich ergeben hat. Sei es nur das erste Mal im Space gewesen zu sein.
+Danke El Bitcoin Ambassador für so ziemlich alles, was sich erst durch dich ergeben hat. Sei es nur das erste Mal im Space gewesen zu sein.
 
 Dankeschön an Wolf, für die ganze Unterstützung bezüglich diverser Projekte und deiner Freundschaft. Wir sind ein Rudel und ich bin sehr froh, einen so tollen Leitwolf in dir gefunden zu haben.
 
