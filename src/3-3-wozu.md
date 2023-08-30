@@ -16,6 +16,9 @@ welche die Geldmenge in drei Kategorien unterteilt.
 Umfasst überwiegend das Bargeld und Sichteinlagen (bei der Bank liegende Geldbeträge, die täglich ausgezahlt werden können}.
 
 ### Die Geldmenge M2: 14,7 Milliarden €
+
+[Statista](https://de.statista.com/statistik/daten/studie/241824/umfrage/entwicklung-der-geldmenge-m2-in-der-euro-zone/)
+
 Sie umfasst überwiegend Spareinlagen, wie z,B den Bausparvertrag.
 
 ### Die Geldmenge M3: 15,5 Milliarden €
