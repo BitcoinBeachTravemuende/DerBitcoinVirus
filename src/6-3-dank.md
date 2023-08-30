@@ -4,7 +4,7 @@ Ganz besonders möchte ich mich bei meiner wundervollen Ehefrau bedanken, die w�
 
 Ich danke meinem persönlichen Satoshi, ich weiß du wirst das lesen, ich möchte dir sagen das ich ohne dich nie soweit gekommen wäre,ich bin froh dich einen Freund und Mentor nennen zu können.Lebe lang, gesund und erfüllt.
 
-Dank an Gigi für „die Kette von Blöcken“, Dein Buch „21 Lektionen“ und deiner wertvollen Zeit, die Du mir Geschenk hast.
+Dank an Gigi für „die Kette von Blöcken“, Dein Buch „21 Lektionen“ und deiner wertvollen Zeit.
 
 Vielen Dank Dominik Kettner, der mir das Wissen von Edelmetallen vermittelt hat.
 
