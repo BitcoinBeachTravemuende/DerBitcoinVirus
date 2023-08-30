@@ -74,6 +74,7 @@ Alle Euro-Länder sind im EZB-Rat vertreten und können sich bei seinen Sitzunge
 | Portugal     | 1,9035 %      |
 | Finnland     | 1,4939 %      |
 | Irland       | 1,3772 %      |
+| Kroatien     | 0,6595 %      |
 | Litauen      | 0,4707 %      |
 | Slowakei     | 0,3916 %      |
 | Lettland     | 0,3169 %      |
@@ -81,7 +82,7 @@ Alle Euro-Länder sind im EZB-Rat vertreten und können sich bei seinen Sitzunge
 | Estland      | 0,2291 %      |
 | Zypern       | 0,1750 %      |
 | Malta        | 0,0853 %      |
-| Kroatien     | 0,6595 %      |
+
 
 <center>
 
