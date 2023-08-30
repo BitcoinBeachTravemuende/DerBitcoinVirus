@@ -81,10 +81,11 @@ Alle Euro-Länder sind im EZB-Rat vertreten und können sich bei seinen Sitzunge
 | Estland      | 0,2291 %      |
 | Zypern       | 0,1750 %      |
 | Malta        | 0,0853 %      |
+| Kroatien     | 0,6595 %      |
 
 <center>
 
-**Insgesamt 81,3286 %[^note]**
+**Insgesamt 81,9881 %[^note]**
 
 [^note]: Etwaige Differenzen in der Summe durch Runden der Zahlen.
 
