@@ -2,9 +2,9 @@
 
 Ganz besonders möchte ich mich bei meiner wundervollen Ehefrau bedanken, die während des Schreibens eine enorme Hilfe war und mitgeholfen hat. Ich danke Dir für so viele, wunderbare Jahre. Auch für die, die noch vor uns liegen und unser Proof of work Kind. Ich weiß, dass ich fast nur über Bitcoin rede und Du erträgst es tapfer. Ich liebe Dich / Euch.
 
-Ich danke meinem Satoshi, ich weiß du wirst das lesen, ich möchte dir sagen das ich ohne dich nie soweit gekommen wäre,ich bin froh dich einen Freund und Mentor  nennen zu können.Lebe lang und erfüllt. 
+Ich danke meinem persönlichen Satoshi, ich weiß du wirst das lesen, ich möchte dir sagen das ich ohne dich nie soweit gekommen wäre,ich bin froh dich einen Freund und Mentor nennen zu können.Lebe lang, gesund und erfüllt.
 
-Dank an Gigi für „die Kette von Blöcken“, Dein Buch „21 Lektionen“ und Deiner wertvollen Zeit, die Du mir Geschenk hast.
+Dank an Gigi für „die Kette von Blöcken“, Dein Buch „21 Lektionen“ und deiner wertvollen Zeit, die Du mir Geschenk hast.
 
 Vielen Dank Dominik Kettner, der mir das Wissen von Edelmetallen vermittelt hat.
 
@@ -19,14 +19,14 @@ Ich danke Marc Friedrich für finanzielle Intelligenz. Du hast mir so einiges wi
 
 Ich bedanke mich bei Niko Jilch, der sich die Zeit genommen hat, die Rohfassung des Manuskripts zu lesen, obwohl er selbst mit „Was Bitcoin bringt“ viel zu tun hat. Tolle Arbeit mach weiter so!
 
-Vielen Dank geht an den Helper, der mich bestätigt hat das Werk zu veröffentlichen. Ich danke auch Dir für das Lesen des Manuskripts,
-Deiner Hilfe, bei jeden meiner Fragen, auch die richtige Antwort zu finden.
+Vielen Dank geht an den Helper, der mich darin bestätigt hat das Werk auch zu veröffentlichen. Ich danke auch dir für das Lesen des Manuskripts,
+deiner Hilfe, bei jeden meiner Fragen, auch die richtige Antwort zu finden.
 
 Danke El Bitcoin Ambassador für so ziemlich alles, was sich erst durch dich ergeben hat. Sei es nur das erste Mal im Space gewesen zu sein.
 
 Dankeschön an Wolf, für die ganze Unterstützung bezüglich diverser Projekte und deiner Freundschaft. Wir sind ein Rudel und ich bin sehr froh, einen so tollen Leitwolf in dir gefunden zu haben.
 
-Harald Thomas Finney (04.05.1956 - 28.08.2014), danke Dir. Mögest du Deinen Frieden gefunden haben. 
+Harald Thomas Finney (04.05.1956 - 28.08.2014), danke dir. Mögest du Deinen Frieden gefunden haben. 
 
 Vielen dank Michael Saylor. Ich würde zu gerne wissen, wie viele „Maxis“ du geschaffen hast!? :-)
 
