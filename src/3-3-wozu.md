@@ -22,6 +22,9 @@ Umfasst überwiegend das Bargeld und Sichteinlagen (bei der Bank liegende Geldbe
 Sie umfasst überwiegend Spareinlagen, wie z,B den Bausparvertrag.
 
 ### Die Geldmenge M3: 15,5 Milliarden €
+
+[Statista](https://de.statista.com/statistik/daten/studie/241829/umfrage/entwicklung-der-geldmenge-m3-in-der-euro-zone/)
+
 Sie umfasst Kredite sowie Umsätze aus den Wertpapiergeschäften.
 
 Soweit die Daten von Statista stimmen, so ergab sich Ende Dezember 2021 eine Summe von 41,5 Milliarden Euro.
