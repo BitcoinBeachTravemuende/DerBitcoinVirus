@@ -24,7 +24,7 @@ deiner Hilfe, bei jeden meiner Fragen, auch die richtige Antwort zu finden.
 
 Danke El Bitcoin Ambassador für so ziemlich alles, was sich erst durch dich ergeben hat. Sei es nur das erste Mal im Space gewesen zu sein.
 
-Dankeschön an Wolf, für die ganze Unterstützung bezüglich diverser Projekte und deiner Freundschaft. Wir sind ein Rudel und ich bin sehr froh, einen so tollen Leitwolf in dir gefunden zu haben.
+Dankeschön an Wolff of Walletstreet,für die ganze Unterstützung bezüglich diverser Projekte und deiner Freundschaft. Wir sind ein Rudel und ich bin sehr froh, einen so tollen Leitwolf in dir gefunden zu haben.
 
 Harald Thomas Finney (04.05.1956 - 28.08.2014), danke dir. Mögest du Deinen Frieden gefunden haben. 
 
