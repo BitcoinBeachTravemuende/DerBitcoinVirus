@@ -24,7 +24,7 @@ Deiner Hilfe, bei jeden meiner Fragen, auch die richtige Antwort zu finden.
 
 Danke El Bitcoin Ambassador für so ziemlich alles, was sich erst durch Dich ergeben hat. Sei es nur das erste Mal im Space gewesen zu sein.
 
-Dankeschön an Christo von MIGODI für das Organisieren des Bitcoin Stammtisch und alle Antworten rund um das Thema Mining sowie zukunftsfähige Technologien. Immer eine Inspiration mit Dir zu sprechen.
+Dankeschön an Wolf,für die ganze Unterstützung bezüglich diverser Projekte und deiner Freundschaft. Wir sind ein Rudel und ich bin sehr froh, einen so tollen Leitwolf gefunden zu haben.
 
 Harald Thomas Finney (04.05.1956 - 28.08.2014), danke Dir. Mögest du Deinen Frieden gefunden haben. 
 
@@ -44,6 +44,8 @@ Danke für deine Zeit. Stelle Fragen, bleibe immer skeptisch, lerne dazu, höre 
 Und wenn Ihr Lust habt mal zu sprechen, seit ihr alle jederzeit am Bitcoin Beach Travemünde willkommen.
 
 [@Telegram](https://t.me/+WHuKyfJsY2I5YWM6) 
+
+[@Github](https://bitcoinbeachtravemuende.github.io/meetup/)
 
 #### Kahnsis de Villain
 
