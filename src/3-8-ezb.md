@@ -93,7 +93,7 @@ Alle Euro-Länder sind im EZB-Rat vertreten und können sich bei seinen Sitzunge
 
 </center>
 
-Daten der Europäischen Kommission bilden die Grundlage für die Anpassungen. Die letzte Anpassung wurde am 01.02.2020 vorgenommen, nach dem Brexit.
+Daten der Europäischen Kommission bilden die Grundlage für die Anpassungen. Die letzte Anpassungen wurden am 01.02.2020 vorgenommen, nach dem Brexit und dem 01.01.2023 mit dem Neuzugang Kroatien.
 
 > Zwei mal drei macht vier,<br>
 > widewidewitt und drei macht neune,<br>
