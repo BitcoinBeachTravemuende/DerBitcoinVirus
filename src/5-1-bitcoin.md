@@ -157,6 +157,8 @@ An einem gewissen Punkt lässt sich exponentielles Wachstum in der Anfangsphase 
 
 ![Entwicklungsphasen](assets/phasen.png)
 
+[LinkedIn](https://www.linkedin.com/pulse/bitcoin-greed-next-phase-ross-hanson)
+
 </center>
 
 Die Erkenntnis von den Vorteilen eines gedeckten unabhängigen Geldes vereint also all die Menschen, die sich für Bitcoin begeistern können.
