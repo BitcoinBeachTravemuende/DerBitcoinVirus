@@ -136,6 +136,8 @@ Behinderten, junge und kranke Menschen.
 
 ![Weltweite Internetnutzer](assets/internetnutzer.png)
 
+[Statista](https://de.statista.com/statistik/daten/studie/805943/umfrage/anteil-der-internetnutzer-weltweit/)
+
 </center>
 
 Bitcoin ist ein „schwarzes Loch“ und ebenso ein „weißes Loch“. Bitcoin ist eine Vision, ein Rohstoff von begrenzter Einheit. Das erste digitale Element, erschaffen durch den Menschen, um Ihn zu erlösen, eine Waffe.
