@@ -10,6 +10,7 @@ Zur aktuellen Blockzeit 752.313 während meiner Recherche ergab sich mir folgend
 welche die Geldmenge in drei Kategorien unterteilt.
 
 ### Die Geldmenge M1 : 11,3 Milliarden €
+[Statista](https://de.statista.com/statistik/daten/studie/241800/umfrage/entwicklung-der-geldmenge-m1-in-der-euro-zone/)
 Umfasst überwiegend das Bargeld und Sichteinlagen (bei der Bank liegende Geldbeträge, die täglich ausgezahlt werden können}.
 
 ### Die Geldmenge M2: 14,7 Milliarden €
