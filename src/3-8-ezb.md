@@ -88,6 +88,8 @@ Alle Euro-Länder sind im EZB-Rat vertreten und können sich bei seinen Sitzunge
 
 [^note]: Etwaige Differenzen in der Summe durch Runden der Zahlen.
 
+[EZB](https://www.ecb.europa.eu/ecb/orga/capital/html/index.de.html)
+
 </center>
 
 Daten der Europäischen Kommission bilden die Grundlage für die Anpassungen. Die letzte Anpassung wurde am 01.02.2020 vorgenommen, nach dem Brexit.
