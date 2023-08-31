@@ -17,6 +17,8 @@ Gut schauen wir zurück, zur Einführung des Euros bis heute ...
 
 ![Statistik Euro-Kaufkraft](assets/kaufkraft.png)
 
+[Finanzen100](https://www.finanzen100.de/finanznachrichten/boerse/ob-kontrolliert-oder-explosiv-an-einer-geldentwertung-fuehrt-kein-weg-vorbei_H578273647_1247295/)
+
 </center>
 
 Was für ein stabiler Abwärtstrend der Kaufkraft.
