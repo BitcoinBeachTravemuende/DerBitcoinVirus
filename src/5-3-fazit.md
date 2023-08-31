@@ -44,7 +44,7 @@ Es ist Bitcoin egal, wo du bist, welche ethnische Herkunft, welches Aussehen, we
 
 Es ist da, um zu dienen. Es ist da, um das Vertrauen ins Geld zurück zu geben.
 
-Bitcoin ist so viel mehr, als wir jemals hatten,das Medium der Zukunft,digitales symbiotisches Wasser. Es ist die Hoffnung auf eine bessere Zukunft für unsere Kinder, in der Ressourcen nicht verschenkt oder verschwendet werden.
+Bitcoin ist so viel mehr, als wir jemals hatten, das Medium der Zukunft, digitales symbiotisches Wasser. Es ist die Hoffnung auf eine bessere Zukunft für unsere Kinder, in der Ressourcen nicht verschenkt oder verschwendet werden.
 
 Es ist eine alternative zum jetzigen bestehenden System.
 
