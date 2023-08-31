@@ -21,7 +21,7 @@ Ich wollte wissen, ob es Zufall ist, dass ich arm bin oder ob ich wirklich selbs
 
 ![Tweet von @FabTheFoxx](assets/fabthefoxx.png)
 
-[@FabTheFoxx](https://x.com/fabthefoxx/status/15655763833813258240)
+[@FabTheFoxx](https://x.com/fabthefoxx/status/1565763833813258240)
 
 </center>
 
