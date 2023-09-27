@@ -24,3 +24,5 @@ Die nun folgende Tabelle zeigt Ihnen an, wie lange es dauert, bis sich Ihre Kauf
 | 18%           | 3,85                          |
 | 19%           | 3,65                          |
 | 20%           | 3,47                          |
+
+[Inflations-Rechner](https://extraetf.com/de/finanzrechner/inflations-rechner)
