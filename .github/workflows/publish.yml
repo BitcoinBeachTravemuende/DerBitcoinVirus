@@ -24,7 +24,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
 
       - name: Build book
-        run: mdbook build
+        run: nix build -L --show-trace
 
       - name: Deploy book
         uses: peaceiris/actions-gh-pages@v3

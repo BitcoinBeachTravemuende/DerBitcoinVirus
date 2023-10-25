@@ -16,6 +16,9 @@
       {
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = [ pkgs.mdbook ];
+          buildCommand = ''
+            mdbook build 
+          '';
         };
       });
 }
