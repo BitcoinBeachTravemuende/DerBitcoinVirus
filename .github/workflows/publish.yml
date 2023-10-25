@@ -24,11 +24,11 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
 
       - name: Build book
-        run: nix build -L --show-trace
+        run: nix develop -c mdbook build
 
       - name: Deploy book
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book
