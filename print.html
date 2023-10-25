@@ -1,42 +1,28 @@
 <!DOCTYPE HTML>
-<html lang="de" class="sidebar-visible no-js light">
+<html lang="de" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Der Bitcoin Virus</title>
-        
-        <meta name="robots" content="noindex" />
-        
-        
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
-
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
@@ -44,22 +30,20 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
 
-        
         <!-- MathJax -->
-        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -75,27 +59,34 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -105,48 +96,62 @@
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Der Bitcoin Virus</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
-                        
 
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
@@ -157,10 +162,9 @@
                         </ul>
                     </div>
                 </div>
-                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -176,11 +180,11 @@
 <center>
 <p><img src="assets/cover-back.png" alt="Buch Rückseite" /></p>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><center style="padding-top:6em;">
+<div style="break-before: page; page-break-before: always;"></div><center style="padding-top:6em;">
 <h1 id="für-meine-ohana"><a class="header" href="#für-meine-ohana">Für meine Ohana.</a></h1>
 <h2 id="dass-sie-nie-wieder-in-die-matrix-zurück-findet"><a class="header" href="#dass-sie-nie-wieder-in-die-matrix-zurück-findet">Dass sie nie wieder in die Matrix zurück findet.</a></h2>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="vorwort"><a class="header" href="#vorwort">VORWORT</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vorwort"><a class="header" href="#vorwort">VORWORT</a></h1>
 <p>Wie oft musste ich in meinem Leben schon hören &quot;Du bist ein Träumer!&quot;. Aber sind es nicht erst die Träumer dieser Welt, die Visionen wahr werden lassen? Man muss nur aufwachen, um diese in die Realität umzusetzen.</p>
 <p>Die Gebrüder Wright, mit ihrem Ehrgeiz wie die Vögel oben am Himmel zu fliegen, in Freiheit und endlicher Weite. Leonardo da Vinci, der seiner Zeit bei Weitem voraus war. Und noch viele andere könnte ich hier erwähnen.</p>
 <p>Dieses Buch haben wir im wesentlichen Satoshi Nakamoto zu verdanken, denn von ihm ist das &quot;White Paper&quot;. Von ihm haben wir die in einer Kette von Blöcken geschriebene Revolution.</p>
@@ -191,7 +195,7 @@
 <p>„Ich versuche deinen Verstand zu befreien, Neo. Aber ich kann dir nur die Tür zeigen. Hindurchgehen musst du alleine.&quot;</p>
 <p><em>Morpheus @ Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="Über-dieses-buch"><a class="header" href="#Über-dieses-buch">ÜBER DIESES BUCH</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Über-dieses-buch"><a class="header" href="#Über-dieses-buch">ÜBER DIESES BUCH</a></h1>
 <p>Die Beweggründe dieses Buch zu schreiben, sind ebenso vielfältig, wie die Erfahrungen, die Sie mit diesem Buch machen dürfen.</p>
 <p>Eine Reise voller Fragen und Antworten. Antworten auf Fragen, noch bevor Sie überhaupt über diese Frage nachdachten. Jede einzelne hat mir Jahre und Stunden Kopfzerbrechen bereitet. Auf der Suche nach einer Antwort, präsentierte sich
 mir immer nur steht’s eine noch bedeutsamere Frage. Aber nie eine Antwort auf die Frage, die ich mir ursprünglich stellte.</p>
@@ -215,7 +219,7 @@ von der Traumwelt und der Matrix unterscheiden?</p>
 <p>Weil du sie noch nie benutzt hast.</p>
 <p><em>Morpheus @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="Über-den-autor"><a class="header" href="#Über-den-autor">ÜBER DEN AUTOR</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Über-den-autor"><a class="header" href="#Über-den-autor">ÜBER DEN AUTOR</a></h1>
 <p>Ich bin nicht von Bedeutung. Aber ich hoffe, dass meine Erkenntnisse es sind.</p>
 <p>Ich bin ein Mann aus einfachen Verhältnissen.</p>
 <p>Ich habe weder studiert, noch Abitur.</p>
@@ -223,7 +227,7 @@ von der Traumwelt und der Matrix unterscheiden?</p>
 <p>Ich wachse an jeder Erfahrung, an jeder Aufgabe, die mich erfüllt.</p>
 <p>Ich komme und gehe mit der Zeit.</p>
 <p>Ich bin der Hahn aus Robin Hood.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><blockquote>
+<div style="break-before: page; page-break-before: always;"></div><blockquote>
 <p>„Neo, wach auf&quot;</p>
 <p><em>Morpheus @Matrix</em></p>
 </blockquote>
@@ -253,7 +257,7 @@ haben, die Ware jedoch um X% gestiegen ist, dann können Sie sich diese nicht me
 <p>„Die Antwort ist irgendwo da draußen Neo, sie ist auf der Suche nach dir und sie wird dich finden, wenn du es willst“</p>
 <p><em>Trinity @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="einleitung"><a class="header" href="#einleitung">EINLEITUNG</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="einleitung"><a class="header" href="#einleitung">EINLEITUNG</a></h1>
 <p>Als ich mich im Jahre 2020 zum ersten Mal mit Bitcoin näher befasste, stellte ich fest, dass dieses <strong>„Magic
 Internet Money“</strong> immer noch lebt und zwar seit 11
 Jahren. Somit kaufte ich meinen ersten <strong>UTXO</strong>.</p>
@@ -281,8 +285,9 @@ so passiert ist.</p>
 unserer Realität. Sie sind der rote Faden in meinem Werk.</p>
 <p>Mit der Zeit fügen sich Teile zusammen, Sie verarbeiten diese und fällen ihren Entschluss, richtig?</p>
 <p>Aber was ist, wenn eben diese Teile manipuliert sind? Lassen Sie uns gemeinsam die Antwort finden.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="1-die-zeit"><a class="header" href="#1-die-zeit">1. DIE ZEIT</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="1-die-zeit"><a class="header" href="#1-die-zeit">1. DIE ZEIT</a></h1>
 <h2 id="die-zeit-ist-allgegenwärtig---t"><a class="header" href="#die-zeit-ist-allgegenwärtig---t">Die Zeit ist allgegenwärtig - t</a></h2>
+<p>kdv</p>
 <blockquote>
 <p>Dimension, die Ereignisse von der Vergangenheit in die Zukunft ordnet.</p>
 <p><em>@wikipedia</em></p>
@@ -307,7 +312,7 @@ Doch diese Rechnung hat kein</br>
 Verdruss, sie bringt uns alle Plus.</p>
 <p><em>Jupp Schmitz - 1.Strophe 1952</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="11-was-ist-zeit"><a class="header" href="#11-was-ist-zeit">1.1. WAS IST ZEIT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="11-was-ist-zeit"><a class="header" href="#11-was-ist-zeit">1.1. WAS IST ZEIT</a></h2>
 <p>Die Zeit ist eine physikalische Größe. Das allgemein übliche Formelzeichen ist t, ihre (SI-Einheit) ist die Sekunde s. Im Einheitssystem ist die Zeit eine von mehreren Basisgrößen.</p>
 <p>Die Zeit beschreibt die Abfolge von Ereignissen. Sie hat
 also eine eindeutige, nicht umkehrbare Richtung. Mit der Hilfe der physikalischen Prinzipien der Thermodynamik kann diese Richtung als Zunahme der Entropie, d.h. Der Unordnung in einem
@@ -340,7 +345,7 @@ Und die große Turmuhr die schlägt:<br>
 Bim Bam Bim Bam<br></p>
 <p><em>Kinderlied von Karl Karow, um 19. Jahrhundert</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="12-von-anbeginn-der-zeit"><a class="header" href="#12-von-anbeginn-der-zeit">1.2. VON ANBEGINN DER ZEIT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="12-von-anbeginn-der-zeit"><a class="header" href="#12-von-anbeginn-der-zeit">1.2. VON ANBEGINN DER ZEIT</a></h2>
 <p>Wissen Sie, warum wir in unserer heutigen Zeitrechnung im Jahre 2022 leben?</p>
 <p>Ich durfte mit Erschrecken immer wieder miterleben, wie viele Menschen, diese Antwort nicht wissen. Weltweit feiern Menschen jedes Jahr Sylvester (welcher Sinn, sich mir leider noch nicht
 entschlossen hat), ohne zu wissen, was erst zum Anbeginn unserer Zeitrechnung geführt hat: Das Jahr 0.</p>
@@ -360,14 +365,14 @@ befinden, dass Sie Zeiträume richtig einschätzen
 können und verstehen, dass diese begrenzt und
 in ihrer Einzigartigkeit nicht reproduzierbar sind. Jedes
 Jahr, jeder Moment ihres Lebens. Nichts ist endlos, nur die Zeit selbst.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="13-die-uhrzeit"><a class="header" href="#13-die-uhrzeit">1.3. DIE UHRZEIT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="13-die-uhrzeit"><a class="header" href="#13-die-uhrzeit">1.3. DIE UHRZEIT</a></h2>
 <p>Die Uhrzeit ist die Angabe zu einem bestimmten Zeitpunkt.</p>
 <p>Die Zeitangabe wird dabei unterteilt in Stunden,
 Minuten und Sekunden.</p>
 <p>Daher vergehen 24 Stunden, bis die Erde wieder dieselbe Ausrichtung zur Sonne hat wie am Vortag.</p>
 <p>Wir messen für einen Tag 24h, wobei es eigentlich
 23 Stunden und 56 Minuten sind.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="14-die-blockzeit"><a class="header" href="#14-die-blockzeit">1.4. DIE BLOCKZEIT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="14-die-blockzeit"><a class="header" href="#14-die-blockzeit">1.4. DIE BLOCKZEIT</a></h2>
 <p>Die Blockzeit, bessere bekannt als die Blockhöhe, ist
 die unter den Bitcoinern verwendete Zeitangabe, die
 Ihren Beginn mit Satoshi Nakamoto fand. Am 03.01.2009
@@ -404,7 +409,7 @@ Morgen Früh wen Gott will,<br>
 Wirst du wieder geweckt.</p>
 <p><em>Johannes Brahms, 19. Jahrhundert, Strophe 1</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="15-die-wahrnehmung-unserer-zeit"><a class="header" href="#15-die-wahrnehmung-unserer-zeit">1.5. DIE WAHRNEHMUNG UNSERER ZEIT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="15-die-wahrnehmung-unserer-zeit"><a class="header" href="#15-die-wahrnehmung-unserer-zeit">1.5. DIE WAHRNEHMUNG UNSERER ZEIT</a></h2>
 <p>Wie nimmt der Mensch seine Zeit auf Erden eigentlich wahr? Wann und warum ändert sich diese Wahrnehmung?</p>
 <p>Unser Leben ist von Anfang bis Ende mit einer durchschnittlichen Lebenserwartung von 83,4 Jahren für weibliche und 78,6 Jahren für das männliche Geschlecht zu erwarten. In all dieser Zeit, steht Ihnen eine unbekannte X an physikalischer Leistung zu Verfügung. Ebenso können Sie auch nur
 eine begrenzte in Eigenleistung erbringen.</p>
@@ -467,7 +472,7 @@ Wer hat soviel Geld?</p>
 <center>
 <p><img src="assets/21mio.png" alt="21 Millionen" /></p>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="16-die-zukunft-oder-die-gestohlene-zeit-unserer-kinder"><a class="header" href="#16-die-zukunft-oder-die-gestohlene-zeit-unserer-kinder">1.6. DIE ZUKUNFT ODER DIE GESTOHLENE ZEIT UNSERER KINDER</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="16-die-zukunft-oder-die-gestohlene-zeit-unserer-kinder"><a class="header" href="#16-die-zukunft-oder-die-gestohlene-zeit-unserer-kinder">1.6. DIE ZUKUNFT ODER DIE GESTOHLENE ZEIT UNSERER KINDER</a></h2>
 <p>Wir wissen jetzt was Zeit, was ein Zeitraum und was die
 die Phasen  unseres Lebenszyklus sind. Nun kommen wir
 zu dem, was wir „Schulden“ nennen.</p>
@@ -503,7 +508,7 @@ Kinder, in der Matrix.</p>
 <p>„Das ist schon bald nicht mehr“.</p>
 <p><em>Trinity@Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="17-beispiel-falsche-zeit"><a class="header" href="#17-beispiel-falsche-zeit">1.7. BEISPIEL: FALSCHE ZEIT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="17-beispiel-falsche-zeit"><a class="header" href="#17-beispiel-falsche-zeit">1.7. BEISPIEL: FALSCHE ZEIT</a></h2>
 <center>
 <p><img src="assets/tiny-house.png" alt="Junges Paar baut Tiny House für 55000 EUR" /><br>
 <em>Artikel vom 28.08.2022 Business Insider</em><br>
@@ -549,7 +554,7 @@ Ihre wirtschaftliche Lage?</p>
 <p>„Willkommen in der Wüste des Realen“</p>
 <p><em>Morpheus @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="2-die-physikalische-leistung"><a class="header" href="#2-die-physikalische-leistung">2. DIE PHYSIKALISCHE LEISTUNG</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="2-die-physikalische-leistung"><a class="header" href="#2-die-physikalische-leistung">2. DIE PHYSIKALISCHE LEISTUNG</a></h2>
 <center>
 <h2 id="-p--fracwat-"><a class="header" href="#-p--fracwat-">\[ P = \frac{W}{At} \]</a></h2>
 <br>
@@ -562,7 +567,7 @@ At = verstrichene Zeit<br>
 <p>„Ich weiß warum du hier bist, Neo. Ich weiß was du machst, wieso du alleine wohnst und wieso du Nacht für Nacht vor deinem Computer sitzt. Du suchst nach ihr.“</p>
 <p><em>Trinity @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="21-definition"><a class="header" href="#21-definition">2.1. DEFINITION</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="21-definition"><a class="header" href="#21-definition">2.1. DEFINITION</a></h2>
 <p>Die Leistung als physikalische Größe bezeichnet die in einer Zeitspanne umgesetzte Energie bezogen auf die Zeitspanne.</p>
 <p>Ihr Formelzeichen ist meist <strong>P</strong> (englisch Power), ihre SI-Einheit das Watt mit dem Einheitszeichen <strong>W</strong>.</p>
 <p>Im physikalisch-technischem Zusammenhang wird der Begriff Leistung in verschiedenen Bedeutungen verwendet.</p>
@@ -576,7 +581,7 @@ Leistung</li>
 </ul>
 <p>Die Leistungsaufnahme und die für eine bestimmte Anwendung nutzbringende Leistungsangaben können je nach Wirkungsgrad bzw. Abwärme erheblich voneinander abweichen.</p>
 <p><a href="https://de.wikipedia.org/wiki/Leistung_(Physik)">@wikipedia</a></p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="22-proof-of-work"><a class="header" href="#22-proof-of-work">2.2. PROOF OF WORK</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="22-proof-of-work"><a class="header" href="#22-proof-of-work">2.2. PROOF OF WORK</a></h2>
 <p>Ins Deutsche übersetzt: Arbeitsnachweis; eine Bescheinigung der
 aufgebrachten Leistung für einen gewissen Zeitraum.</p>
 <p>Proof of work ist der Konsens-Algorithmus, d.h. die
@@ -628,13 +633,13 @@ Mein Block<br></p>
 <blockquote>
 <p>Wissen ist der Schlüssel</p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="3-was-ist-geld"><a class="header" href="#3-was-ist-geld">3. WAS IST GELD?</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="3-was-ist-geld"><a class="header" href="#3-was-ist-geld">3. WAS IST GELD?</a></h1>
 <blockquote>
 <p>„Jedwede Art von Säugern auf diesem Planeten entwickelt instinktiv ein natürliches Gleichgewicht mit ihrer Umgebung.</p>
 <p>Ihr Menschen tut dies nicht. Der Mensch ist eine Krankheit, Das Geschwür dieses Planeten.“</p>
 <p><em>Agent Smith @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="31-definition"><a class="header" href="#31-definition">3.1. DEFINITION</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="31-definition"><a class="header" href="#31-definition">3.1. DEFINITION</a></h2>
 <p>Nun Geld an sich ist nur ein Medium - es ist. Geld trifft weder Entscheidungen, noch hat es andere Aufgaben als ein Medium zum Tausch zu sein. Es wird in folgende zwei Kategorien unterschieden, gutes Geld und schlechtes Geld.</p>
 <p>Doch woran machen wir nun fest, welches der beiden nun welches ist? Nun, wir schreiben den Dingen ihren dementsprechenden Wert von Zeit und physikalisch erbrachter Leistung zu, meistens zumindest. Um den Wert zu ermitteln, nutzt man das „Stock to Flow“ Modell. Es beschreibt die Härte beziehungsweise Knappheit eines Gutes auf Hinblick auf die Zeit, den realen Wert. Wie der Mensch diese wahrnimmt, ist eine andere.</p>
 <p>In der Geschichte des Geldes ist es erwiesen, dass Geld absolut alles sein kann, worauf wir uns einigen können: Steine, Muscheln, Silber, Gold, Münzen aus anderen Metallen, Papier oder eben Bitcoin.</p>
@@ -663,7 +668,7 @@ Mein Block<br></p>
 <li>Verarmung der Gesellschaft</li>
 </ul>
 <p>Es ist nicht das Geld, womit der Mensch nicht umgehen kann, sondern die Zeit.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="32-warum-nutzen-wir-geld"><a class="header" href="#32-warum-nutzen-wir-geld">3.2. WARUM NUTZEN WIR GELD?</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="32-warum-nutzen-wir-geld"><a class="header" href="#32-warum-nutzen-wir-geld">3.2. WARUM NUTZEN WIR GELD?</a></h2>
 <blockquote>
 <p>„Warum?“</p>
 <p><em>Neo</em></p>
@@ -689,7 +694,7 @@ haben wir nicht immer Zeit oder ewig Zeit.</p>
 <h1 id="geld"><a class="header" href="#geld">Geld</a></h1>
 <h2 id="substantiv-neutrum"><a class="header" href="#substantiv-neutrum">Substantiv, Neutrum</a></h2>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="33-wozu-all-das-viele-geld"><a class="header" href="#33-wozu-all-das-viele-geld">3.3. WOZU ALL DAS VIELE GELD?</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="33-wozu-all-das-viele-geld"><a class="header" href="#33-wozu-all-das-viele-geld">3.3. WOZU ALL DAS VIELE GELD?</a></h2>
 <blockquote>
 <p>„Hattest du jemals einen Traum Neo, der dir komplett real erschien?
 Was wäre, wenn du unfähig wärst wieder aufzuwachen Neo?
@@ -722,7 +727,7 @@ dem sich Schulden überhäufen und Sie kein neues frisches Kapital mehr bekommen
 <p><em>09/22 Robert Habeck bei Maischberger</em></p>
 </blockquote>
 <p>Auch wenn das unser Bundeswirtschaftsminister Robert Habeck, etwas anders sieht in seiner Welt.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="34-vermÖgenswerte"><a class="header" href="#34-vermÖgenswerte">3.4. VERMÖGENSWERTE</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="34-vermÖgenswerte"><a class="header" href="#34-vermÖgenswerte">3.4. VERMÖGENSWERTE</a></h2>
 <p>Was versteht man unter Vermögenswerte beziehungsweise Vermögensklasse?</p>
 <p>Als Vermögensklassen werden bezeichnet: Immobilien, Aktien, Rohstoffe wie z.B Bitcoin, Edelmetalle, Fonds, Kunst, Antiquitäten, Oldtimer,
 Uhren, Schiffe, Firmenbeteiligungen usw.</p>
@@ -748,7 +753,7 @@ Und was zur Hölle ist UTXO?<br></p>
 Quellen: Morningstar, Finanzen.net, savlillis.com, CoinMarketcap <br>
 Via <a href="https://blockchainwelt.de/krypto-statistiken/">blockchainwelt.de</a></em></p>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="35-wer-macht-geld"><a class="header" href="#35-wer-macht-geld">3.5. WER MACHT GELD?</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="35-wer-macht-geld"><a class="header" href="#35-wer-macht-geld">3.5. WER MACHT GELD?</a></h2>
 <blockquote>
 <p>„Sie haben ein Problem mit Autorität, Mr. Anderson. Sie halten sich für etwas besonderes, jemanden für den keine Regeln gelten Aber da liegen Sie definitiv falsch. Diese Firma gehört zu den besten Software-Produzenten der Welt, da sich jeder Angestellte als Teil eines ganzen sieht. Hat einer dieser Angestellten ein Problem, hat die Firma ein Problem.“</p>
 <p><em>Agent Smith @Matrix</em></p>
@@ -757,7 +762,7 @@ Via <a href="https://blockchainwelt.de/krypto-statistiken/">blockchainwelt.de</a
 <p><em>Als Währungsmonopol bezeichnet man das gesetzliche Monopol auf die Emission einer Währung. Mit einer Monopolisierung wird ein gesetzliches Zahlungsmittel geschaffen.</em></p>
 <p><em>Emittent dieser Währung ist dabei heute in demokratischen Ländern mit marktwirtschaftlicher Wirtschaftsordnung im Regelfall eine Notenbank, der dieses Recht vom Staat übertragen wurde. Dabei bekommt diese meist auch das Recht zugestanden, die Geldmenge des gesetzlichen Zahlungsmittels entsprechend gesetzlicher Vorgaben eigenverantwortlich zu regulieren. Eine gesetzliche Ordnung hinsichtlich Gestaltung und Prägung von Münzen und Banknoten existiert unabhängig davon.</em></p>
 <p>Quelle: <a href="https://de.wikipedia.org/wiki/W%C3%A4hrungsmonopol">@Wikipedia</a></p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="36-der-euro"><a class="header" href="#36-der-euro">3.6. DER EURO</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="36-der-euro"><a class="header" href="#36-der-euro">3.6. DER EURO</a></h2>
 <h3 id="oder-der-teuro"><a class="header" href="#oder-der-teuro">Oder der „Teuro“?</a></h3>
 <p><em>Der Euro ist laut Art.3 Abs.EUV die Warnung der europäischen Wirtschafts- und Währungsunion, eines Art. 127-144 AEUV geregelten Politikbreis der Europäischen Zentralbank emittiert und fungiert als gemeinsame offzielle Währung in 19 EU-Mitgliedstaaten, die zusammen die EUROZONE bilden, so wie in sechs weiteren europäischen Staaten.</em></p>
 <p><em>Nach dem US-Dollar $ ist der EURO die wichtigste Reservewährung der Welt. Der Euro wurde am 01.01.1999 als Buchgeld und und
@@ -772,16 +777,16 @@ drei Jahre später als Bargeld eingeführt. Damit löste er die nationalen Währ
 <em>Artikel: ECB’s Lagarde calls for regulating Bitcoin’s &quot;funny business&quot;</em></p>
 </blockquote>
 <p>Fragen Sie, wie teuer ist das? Oder, was kostet das?</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="37-wÄhrungsunion--schuldenunion"><a class="header" href="#37-wÄhrungsunion--schuldenunion">3.7. WÄHRUNGSUNION / SCHULDENUNION</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="37-wÄhrungsunion--schuldenunion"><a class="header" href="#37-wÄhrungsunion--schuldenunion">3.7. WÄHRUNGSUNION / SCHULDENUNION</a></h2>
 <blockquote>
 <p>Die Währungsunion ist in der Außenwirtschaftstheorie und Wirtschaft ein Wechselkurssystem, bei dem sich Währungsräume (Staaten) zum Zwecke der Bildung einer gemeinsamen Währung (Gemeinschaftswährung) zusammenschließen. </p>
 <p><em>Quelle: <a href="https://de.wikipedia.org/wiki/W%C3%A4hrungsunion">@Wikipedia</a></em></p>
 </blockquote>
 <center>
-<h2 id="währungsunionbrbrschuldenunion"><a class="header" href="#währungsunionbrbrschuldenunion">Währungsunion<br>=<br>Schuldenunion</a></h2>
+<h2 id="währungsunionschuldenunion"><a class="header" href="#währungsunionschuldenunion">Währungsunion<br>=<br>Schuldenunion</a></h2>
 </center>
 <p>Kleiner Spoiler: Alle Währungsunionen, die der Mensch zuvor probiert hat, sind gescheitert, wirklich alle.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="38-die-ezb"><a class="header" href="#38-die-ezb">3.8. DIE EZB</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="38-die-ezb"><a class="header" href="#38-die-ezb">3.8. DIE EZB</a></h2>
 <p>Gangster im Anzug.</p>
 <p><em>Die Arbeit und die Aufgaben der EZB wurden erstmals im Vertrag von Maastricht 1992 festgelegt. Seit dem Vertrag von Lissabon 2007 besitzt sie formal den Status eines EU-Organs. Die wichtigste Bestimmungen zu ihrer Funktionsweise finnden sich im Art.282 .AEU-
 Vertrag, ihre Satzung ist in dem Vertrag als Protokoll Nr.4 angehängt.</em></p>
@@ -817,7 +822,7 @@ Steuerbetrug 400.000.000€</p>
 Mitspracherecht haben. Je größer ein Land, dessen Population und Wirtschaft/BIP, desto höher auch sein Betrag an
 Anteilen und Haltung der EZB.</p>
 <p>Alle Euro-Länder sind im EZB-Rat vertreten und können sich bei seinen Sitzungen zu Wort melden. Die Stimmrechte rotieren im EZB-Rat und werden mittels eines speziellen Systems zugewiesen.</p>
-<table><thead><tr><th>Land</th><th>Prozentanteil</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Land</th><th>Prozentanteil</th></tr></thead><tbody>
 <tr><td>Deutschland</td><td>21,4394 %</td></tr>
 <tr><td>Frankreich</td><td>16,6108 %</td></tr>
 <tr><td>Italien</td><td>13,8165 %</td></tr>
@@ -838,7 +843,7 @@ Anteilen und Haltung der EZB.</p>
 <tr><td>Zypern</td><td>0,1750 %</td></tr>
 <tr><td>Malta</td><td>0,0853 %</td></tr>
 </tbody></table>
-<center>
+</div><center>
 <p><strong>Insgesamt 81,9881 %<sup class="footnote-reference"><a href="#note">1</a></sup></strong></p>
 <div class="footnote-definition" id="note"><sup class="footnote-definition-label">1</sup>
 <p>Etwaige Differenzen in der Summe durch Runden der Zahlen.</p>
@@ -866,7 +871,7 @@ geschrieben von Astrid Lindgren, 1969</em></p>
 <p><img src="assets/preat.png" alt="Foto Peter Praet" /><br>
 <a href="https://de.wikipedia.org/wiki/Peter_Praet">@Wikipedia</a></p>
 <p>Seit 01.11.2019</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h3 id="39-interview-mit-peter-praet"><a class="header" href="#39-interview-mit-peter-praet">3.9. INTERVIEW MIT PETER PRAET</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="39-interview-mit-peter-praet"><a class="header" href="#39-interview-mit-peter-praet">3.9. INTERVIEW MIT PETER PRAET</a></h3>
 <p><em>Quelle: <a href="https://www.3sat.de/film/dokumentarfilm/oeconomia-100.html">3Sat Dokumentation &quot;Oeconomia&quot;</a></em></p>
 <p>Ein Ausschnitt:</p>
 <h4 id="peter-praet-1"><a class="header" href="#peter-praet-1">Peter Praet:</a></h4>
@@ -948,9 +953,9 @@ Heut tanzt Mariett, heut tanzt Mariett<br>
 und heut heut.<br></p>
 <p><em>Lied von Robert Koppel, 1928</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h3 id="310-inflatioinstabelle"><a class="header" href="#310-inflatioinstabelle">3.10. INFLATIOINSTABELLE</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="310-inflatioinstabelle"><a class="header" href="#310-inflatioinstabelle">3.10. INFLATIOINSTABELLE</a></h3>
 <p>Die nun folgende Tabelle zeigt Ihnen an, wie lange es dauert, bis sich Ihre Kaufkraft, also was Sie sich für den selben 50 € Schein an Waren und Dienstleistungen leisten können, halbiert.</p>
-<table><thead><tr><th>Inflationsrate</th><th>Kaufkrafthalbierung in Jahren</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Inflationsrate</th><th>Kaufkrafthalbierung in Jahren</th></tr></thead><tbody>
 <tr><td>1%</td><td>69,31</td></tr>
 <tr><td>2%</td><td>34,66</td></tr>
 <tr><td>3%</td><td>23,10</td></tr>
@@ -972,8 +977,9 @@ und heut heut.<br></p>
 <tr><td>19%</td><td>3,65</td></tr>
 <tr><td>20%</td><td>3,47</td></tr>
 </tbody></table>
+</div>
 <p><a href="https://extraetf.com/de/finanzrechner/inflations-rechner">Inflations-Rechner</a></p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="4-die-matrix--woran-die-welt-erkrankte"><a class="header" href="#4-die-matrix--woran-die-welt-erkrankte">4. DIE MATRIX- WORAN DIE WELT ERKRANKTE</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="4-die-matrix--woran-die-welt-erkrankte"><a class="header" href="#4-die-matrix--woran-die-welt-erkrankte">4. DIE MATRIX- WORAN DIE WELT ERKRANKTE</a></h2>
 <blockquote>
 <p>„Die Welt ist ein System, Neo. Dieses System ist unser Feind.<br>
 Aber wenn du drinnen bist, dich umsiehst, was siehst du? Geschäftsleute, Lehrer, Anwälte, Tischler. Genau die Seelen von den Menschen die wir versuchen zu retten.<br></p>
@@ -987,7 +993,7 @@ Aber wenn du drinnen bist, dich umsiehst, was siehst du? Geschäftsleute, Lehrer
 <p>Weck mich bitte auf aus diesem Albtraum. Menschen sehen vor lauter Bäumen den Wald kaum. Ich und du und er und sie indes sind besser dran, wenn wir uns selber helfen.<br></p>
 <p><em>Refrain: Bitte weck mich auf aus diesem Albtraum von Samy Deluxe, 2001</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h3 id="41-was-ist-die-matrix"><a class="header" href="#41-was-ist-die-matrix">4.1 Was ist die Matrix?</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="41-was-ist-die-matrix"><a class="header" href="#41-was-ist-die-matrix">4.1 Was ist die Matrix?</a></h3>
 <p>Nun, in unserem Fall ist die Matrix eine Analogie zu unserer, von Menschen geschaffenen Welt, in der Sie sich zur aktuellen Blockzeit befinden. Zitate des Filmes dienen als Metapher, um Ihnen die Analogie vor Augen zu führen. Matrix ist ein Film aus dem Jahre 1999, den Sie nach diesem Buch vielleicht mit anderen Augen sehen werden.</p>
 <p>Es ist eine unter den Bitcoinern weit verbreitete Analogie, spielt aber keine Rolle für Bitcoin. Ich könnte ebenso Fightclub, Nr.5 lebt, oder Free Willy wählen.</p>
 <p>Die Matrix, unsere Welt, unser Alltag wird geformt und bestimmt durch den Menschen. SIE allein
@@ -1029,11 +1035,11 @@ klatschen geht ;)</p>
 <center>
 <p><img src="assets/entwertung.png" alt="Die Entwertung des Vermögens" /></p>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="42-bretton-woods-system"><a class="header" href="#42-bretton-woods-system">4.2. BRETTON-WOODS-SYSTEM</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="42-bretton-woods-system"><a class="header" href="#42-bretton-woods-system">4.2. BRETTON-WOODS-SYSTEM</a></h2>
 <p>Als Bretton-Woods-System wird die nach den Zweiten Weltkrieg neu geschaffene internationale Währungsordnung mit Wechselkurs bezeichnet, die von US-Dollar als Ankerwährung bestimmt war.</p>
 <p>Es wurde ein System angestrebt, dass die Vorteile eines flexiblen Wechselkurssystems mit denen eines festen vereinte.</p>
 <p>Der US-Dollar war also im Juli 1944 zur Weltleitwährung erklärte worden. Hinterlegt war er in Gold, der Goldstandard.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="43-der-goldstandard"><a class="header" href="#43-der-goldstandard">4.3. DER GOLDSTANDARD</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="43-der-goldstandard"><a class="header" href="#43-der-goldstandard">4.3. DER GOLDSTANDARD</a></h2>
 <p>Der Goldstandard ist eine Währungsordnung (auch Goldwährung genannt), bei der die Währung entweder aus Goldmünzen besteht oder aus Banknoten, die einen Anspruch auf Gold eingetauscht werden können.</p>
 <p>Im einfachsten Fall fungiert geprägtes Gold direkt als Geld (Warengeld, Kurantmünze). Ein Goldstandard besteht auch dann, wenn eine Notenbank einen festen Umtauschkurs ihrer Währung Banknote zu Gold garantiert und tatsächlich jederzeit zum Umtausch in der Menge in der Lage und bereit ist.</p>
 <p><em>Quelle: <a href="https://de.wikipedia.org/wiki/Goldstandard">Wikipedia</a></em></p>
@@ -1057,7 +1063,7 @@ Gestorben 22.04.1994<br></p>
 <h3 id="unterschicht"><a class="header" href="#unterschicht">Unterschicht</a></h3>
 </center>
 <p>Wie viele schaffen es also von ganz unten wirklich nach ganz oben? Wer hat ein reines Gewissen? Sicher nicht die Canttillionäre.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="44-der-cantillon-effekt"><a class="header" href="#44-der-cantillon-effekt">4.4. DER CANTILLON-EFFEKT</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="44-der-cantillon-effekt"><a class="header" href="#44-der-cantillon-effekt">4.4. DER CANTILLON-EFFEKT</a></h2>
 <p>Als Cantillon-Effekt wird in der Ökonomie der Effekt bezeichnet, dass sich eine Erhöhung der (Giral-) Geldmenge (Nettokreditvergabe) nicht automatisch gleichmäßig auf alle Bereiche einer Volkswirtschaft verteilt, sondern in Stufen, wobei manche Bereiche (insbesondere der Bankensektor, andere staatliche Firmen, der Unternehmersektor und politisch begünstigte Gruppen) zuerst profitieren, während der Rest der Volkswirtschaft später folgt oder gar nicht von der Geldschöpfung profitiert.</p>
 <p>Verlierer im Prozess der Geldschöpfung sind diejenigen, bei denen das Geld gar nicht landet, die aber dennoch wegen der Kreditschöpfungsbedingten Inflation gestiegene Preise zahlen müssen.</p>
 <p>Benannt wurde der Effekt nach Richard Cantillon, der 1755 erstmals diesen Effekt in seiner „Abhandlung über die Natur des Handels im allgemeinen“ beschreibt, </p>
@@ -1075,7 +1081,7 @@ Stein auf Stein, Stein auf Stein.<br>
 Das Häuschen wird bald fertig sein.<br></p>
 <p><em>Kinderlied: Urheber und Zeit unbekannt.</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="5-das-bitcoin-virus"><a class="header" href="#5-das-bitcoin-virus">5. DAS BITCOIN VIRUS</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="5-das-bitcoin-virus"><a class="header" href="#5-das-bitcoin-virus">5. DAS BITCOIN VIRUS</a></h2>
 <h3 id="definition-virus"><a class="header" href="#definition-virus">Definition Virus</a></h3>
 <ol>
 <li>Substantiv, Neutrum oder Substantiv (das)</li>
@@ -1086,7 +1092,7 @@ Das Häuschen wird bald fertig sein.<br></p>
 <p>„Wenn real sein bedeutet zu fühlen, riechen, tasten und sehen, dann ist „real“ nichts anderes, als ein elektrisches Signal, das von deinem Gehirn zur Schau gestellt wird.“.</p>
 <p><em>Morpheus @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="51-bitcoin"><a class="header" href="#51-bitcoin">5.1. BITCOIN</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="51-bitcoin"><a class="header" href="#51-bitcoin">5.1. BITCOIN</a></h2>
 <center>
 <img src="assets/bitcoin-logo.svg" style="width:50%; height:50%; padding: 4em 0 0;" alt="Bitcoin Logo" />
 <p><strong>Peer-to-Peer (P2P) Electronic Cash-System</strong></p>
@@ -1195,7 +1201,7 @@ Allgemeinheit handeln. Wir sind libertär.</p>
 <p>Beide sind riskant. Die Wahl überlasse ich dir“.</p>
 <p><em>Morpheus @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="52-die-insel"><a class="header" href="#52-die-insel">5.2 DIE INSEL</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="52-die-insel"><a class="header" href="#52-die-insel">5.2 DIE INSEL</a></h2>
 <blockquote>
 <p>„Hörst du mir zu, Neo- oder siehst du der Frau im Rotem Kleid nach?“<br>
 <em>-Morpheus</em></p>
@@ -1288,7 +1294,7 @@ das Ende dessen eingeläutet hat, wobei wir es doch eigentlich besser wissen sol
 welchen er ersetzt wird.</p>
 <p>Die Geschichte wiederholt sich nicht, aber Sie reimt sich und jede Zeit bringt eine andere Art von Persönlichkeiten mit sich, welche unsere Zukunft formen.</p>
 <p>Alles ist begrenzt, außer unsere Vorstellungskraft, die Zeit und das Geld was wir derzeit nutzen.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="53-fazit"><a class="header" href="#53-fazit">5.3. Fazit</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="53-fazit"><a class="header" href="#53-fazit">5.3. Fazit</a></h2>
 <blockquote>
 <p>Denn ich bin ganz nah dran.<br>
 Bin ganz nah dran.<br>
@@ -1345,13 +1351,13 @@ zum Weinen. Es berührte meine Seele.</p>
 <p>„Solange die Matrix existiert, wird der Mensch niemals frei sein“.</p>
 <p><em>Morpheus @Matrix</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="6-tips-und-warnungen"><a class="header" href="#6-tips-und-warnungen">6. TIPS UND WARNUNGEN</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="6-tips-und-warnungen"><a class="header" href="#6-tips-und-warnungen">6. TIPS UND WARNUNGEN</a></h2>
 <center>
 <p><img src="assets/bitbox.png" alt="Bitbox" /></p>
 <h2 id="dont-trust-verify"><a class="header" href="#dont-trust-verify">Don't trust, verify!</a></h2>
 <p><img src="assets/sedor.jpg" alt="Sedor Set" /></p>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="61-wallet"><a class="header" href="#61-wallet">6.1. WALLET</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="61-wallet"><a class="header" href="#61-wallet">6.1. WALLET</a></h2>
 <p>Sind nicht Sie im Besitz Ihrer Bitcoin, sondern eine 2. Instanz, wie zum Beispiel eine Exchange, Börse, haben nicht Sie selbst den Zugriff auf diese und damit die Verantwortlichkeit?</p>
 <h4 id="not-your-keys-not-your-coins"><a class="header" href="#not-your-keys-not-your-coins">Not your Keys, Not your Coins.</a></h4>
 <h4 id="nicht-deine-schlüssel-nicht-deine-münzen"><a class="header" href="#nicht-deine-schlüssel-nicht-deine-münzen">Nicht Deine Schlüssel, nicht Deine Münzen.</a></h4>
@@ -1377,7 +1383,7 @@ physikalischer Leistung ist.</p>
 <center>
 <p><img src="assets/ftx.jpg" alt="Meme FTX" /></p>
 </center>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="62-warnung"><a class="header" href="#62-warnung">6.2. WARNUNG</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="62-warnung"><a class="header" href="#62-warnung">6.2. WARNUNG</a></h2>
 <p>Crypto-Influencer!!!</p>
 <p>Youtubekanäle wie zum Beispiel:</p>
 <ul>
@@ -1396,7 +1402,7 @@ physikalischer Leistung ist.</p>
 <p>Jeder von Ihnen will nur Ihr Geld, Ihre Zeit rauben. Sie verdienen an Aufrufen, Links, Provisionen und vor allem an Ihren Verlust…. Exactly like predicted.</p>
 <p>Niemand kennt die Zukunft. Ebenso können Sie mit dem Geld ins Casino gehen oder einfach zur Bank. Suchen Sie sich vertrauenswürdige Personen, die nichts von Ihnen wollen, außer den offenen Diskurs.</p>
 <p>Gute Quellen finden sich zum Beispiel in der Danksagung.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h2 id="62-danksagung"><a class="header" href="#62-danksagung">6.2. DANKSAGUNG</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="62-danksagung"><a class="header" href="#62-danksagung">6.2. DANKSAGUNG</a></h2>
 <p>Ganz besonders möchte ich mich bei meiner wundervollen Ehefrau bedanken, die während des Schreibens eine enorme Hilfe war und mitgeholfen hat. Ich danke Dir für so viele, wunderbare Jahre. Auch für die, die noch vor uns liegen und unser Proof of work Kind. Ich weiß, dass ich fast nur über Bitcoin rede und Du erträgst es tapfer. Ich liebe euch.</p>
 <p>Ich danke meinem persönlichen Satoshi, denn ich weiß du wirst das lesen. Ich möchte dir sagen, dass ich ohne deine Hilfe wahrscheinlich nie soweit gekommen wäre, ich bin froh dich einen Freund und Mentor nennen zu können.Lebe lang, gesund und erfüllt.</p>
 <p>Dank an Gigi für „die Kette von Blöcken“, Dein Buch „21 Lektionen“ und deiner wertvollen Zeit.</p>
@@ -1427,7 +1433,7 @@ Kaninchen auf dich wartet.</p>
 <p>„If you dont belive it or dont get it, I dont habe the time to try to convince you, sorry“.</p>
 <p><em>Satoshi Nakamoto</em></p>
 </blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="64-spende"><a class="header" href="#64-spende">6.4. SPENDE</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="64-spende"><a class="header" href="#64-spende">6.4. SPENDE</a></h1>
 <p>Wenn dir das Buch gefallen hat, würde ich mich sehr über eine Spende zur Realisierung weiterer Projekte freuen.</p>
 <center>
 <p><img src="assets/spende-btc.png" alt="Spende BTC" /></p>
@@ -1440,9 +1446,7 @@ Kaninchen auf dich wartet.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
 
-                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -1450,51 +1454,37 @@ Kaninchen auf dich wartet.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
 
-                
             </nav>
 
         </div>
 
-        
 
-        
 
-        
 
-        
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        
 
-        
 
-        
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
 
-        
-        
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             MathJax.Hub.Register.StartupHook('End', function() {
                 window.setTimeout(window.print, 100);
             });
         });
         </script>
-        
-        
 
+    </div>
     </body>
 </html>
