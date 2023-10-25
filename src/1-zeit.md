@@ -2,7 +2,7 @@
 
 ## Die Zeit ist allgegenwärtig - t
 
-
+kdv
 
 > Dimension, die Ereignisse von der Vergangenheit in die Zukunft ordnet.
 >
