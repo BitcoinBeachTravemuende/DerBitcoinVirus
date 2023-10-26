@@ -66,4 +66,4 @@ Vorschläge für Verbesserungen oder Korrekturen sind immer willkommen. Erstelle
 
 ## Lizenz
 
-MIT Lizenz (siehe [LICENSE](LICENSE) or http://opensource.org/licenses/MIT)
+MIT Lizenz (siehe [LICENSE](./LICENSE) or http://opensource.org/licenses/MIT)
