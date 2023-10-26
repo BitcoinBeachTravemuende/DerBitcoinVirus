@@ -44,6 +44,18 @@ mdbook serve
 
 Damit wird ein lokaler Webserver gestartet, der das Buch ausliefert. Das Buch kann im Browser unter `localhost:3000` betrachtet werden. Während der Webserver läuft, wird das Buch automatisch neu gerendert, sobald sich die Dateien des Buches ändern.
 
+## Nix
+
+Alternativ zu den oberen Schritten kann das Buch auch mit `Nix` erstellt werden. 
+
+Voraussetzungen: 
+
+1. [Nix installieren](https://zero-to-flakes.com/install) (engl.)
+1. [`direnv` einrichten](https://zero-to-flakes.com/direnv) (engl.)
+
+Mit `cd` in das Rootverzeichnis, um in die `nix develop` Shell zu gelangen. Gebe einamlig `direnv allow` ein. Danach führe die `mdbook` Befehle aus wie oben beschrieben.
+
+
 ## Online veröffentlichen
 
 Sobald ein Pull Request in den `main` Branch gemerged wird, wird das Buch per [GitHub Action](.github/workflows/publish.yml) automatisch neu erstellt und wird ca. 2-3 Minuten später auf https://bitcoinbeachtravemuende.github.io/DerBitcoinVirus/ veröffentlicht.
@@ -54,4 +66,4 @@ Vorschläge für Verbesserungen oder Korrekturen sind immer willkommen. Erstelle
 
 ## Lizenz
 
-MIT Lizenz (siehe [LICENSE](LICENSE) or http://opensource.org/licenses/MIT)
+MIT Lizenz (siehe [LICENSE](./LICENSE) or http://opensource.org/licenses/MIT)

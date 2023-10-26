@@ -14,15 +14,18 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
+      - name: Install nix
+        uses: cachix/install-nix-action@v22
         with:
-          mdbook-version: '0.4.8'
-          # mdbook-version: 'latest'
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+          nix_path: nixpkgs=channel:nixos-unstable
 
-      - run: mdbook build
+      - name: Build book
+        run: nix develop -c mdbook build
 
-      - name: Deploy
+      - name: Deploy book
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:

@@ -2,8 +2,6 @@
 
 ## Die Zeit ist allgegenwärtig - t
 
-
-
 > Dimension, die Ereignisse von der Vergangenheit in die Zukunft ordnet.
 >
 > *@wikipedia*
